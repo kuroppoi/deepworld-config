@@ -335,6 +335,11 @@ biomes:
       ground/earth-deep: arctic/earth-front-deep
       ground/earth-deeper: arctic/earth-front-deeper
       ground/earth-deepest: arctic/earth-front-deeper
+      ground/stalagmite-1: arctic/icicle-1
+      ground/stalagmite-2: arctic/icicle-2
+      ground/stalagmite-3: arctic/icicle-3
+      ground/stalagmite-4: arctic/icicle-4
+      ground/stalagmite-5: arctic/icicle-5
     map:
       ground:
         - ['ffffff', 0.03]
