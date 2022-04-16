@@ -9708,9 +9708,10 @@ items:
     field: 1
     meta: hidden
     gui: false
+    size: [3, 3]
     background: mechanical/zone-teleporter
     sprite animation: ['mechanical/zone-teleporter-glow', 2]
-    sprite animation color: ffa100
+    sprite animation color: 'ffa100'
     #sound_loop: wobble_02
     use:
       command: true
