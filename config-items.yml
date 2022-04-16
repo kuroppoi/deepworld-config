@@ -44,6 +44,7 @@
 
 items:
   front-block: &front-block
+    layer: front
     tileable: true
     opaque: true
     whole: true
@@ -74,6 +75,8 @@ items:
   ################
 
   base: &base
+    category: base
+    layer: base
     invulnerable: true
     tileable: true
     gui: false
@@ -262,6 +265,8 @@ items:
   ################
 
   liquid/water:
+    layer: liquid
+    category: liquid
     code: 100
     color: '59c2fc'
     tileable: true
@@ -279,6 +284,8 @@ items:
         type: animated
         tileable: true
   liquid/acid:
+    layer: liquid
+    category: liquid
     code: 101
     color: '63f85f'
     tileable: true
@@ -300,6 +307,8 @@ items:
         type: animated
         tileable: true
   liquid/magma:
+    layer: liquid
+    category: liquid
     code: 102
     color: 'ff1610'
     tileable: true
@@ -329,6 +338,7 @@ items:
   ################
 
   back-tile: &back-tile
+    layer: back
     level: 1
     tileable: true
     opaque: true
@@ -706,6 +716,8 @@ items:
 
 
   back/glass:
+    layer: back
+    category: back
     code: 602
     level: 2
     whole: true
@@ -721,6 +733,8 @@ items:
       rarity: 0
       quantity: 20
   back/glass-divided:
+    layer: back
+    category: back
     code: 603
     level: 3
     whole: true
@@ -737,6 +751,8 @@ items:
       quantity: 20
 
   back/scaffold:
+    category: back
+    layer: back
     code: 256
     level: 4
     tileable: true
@@ -804,6 +820,7 @@ items:
 
   ground/earth:
     <<: *ground-earthy
+    layer: front
     code: 512
     sprites:
       - frames: ground/earth
@@ -1748,6 +1765,8 @@ items:
 
   # Ore
   ground/ore: &ground-ore
+    category: ground
+    layer: front
     mod: stack
     craftable: false
     hint: '@ore'
@@ -1872,6 +1891,7 @@ items:
 
   ground/crystal: &ground-crystal
     color: '3169bd'
+    layer: front
     material: glass
     damage: ['piercing', 0.3]
     damage_min_velocity: 5
@@ -1985,6 +2005,7 @@ items:
     <<: *ground-crystal
     code: 58
     title: Rainbow Crystal
+    block_size: [2, 3]
     light_color: ff76f4
     karma: -25
 
@@ -2316,12 +2337,15 @@ items:
     title: Knotted Rope
 
   building/door-wood:
+    layer: back
+    category: building
     code: 610
     color: '515a25'
     char: D
     material: wood
     inventory sprite: building/door-wood-open
     shape: polygonal
+    size: [1, 2]
     title: Wood Door
     hint: '@door'
     door: true
@@ -2552,6 +2576,8 @@ items:
 
   roofing: &roofing
     color: '3a3a3a'
+    category: building
+    layer: front
     material: wood
     shelter: true
     shadow: true
@@ -2819,6 +2845,7 @@ items:
   building/bridge:
     <<: *mirrorable
     code: 634
+    size: [4, 3]
     material: metal
     toughness: 5
     shape: polygonal
@@ -3115,9 +3142,12 @@ items:
       - frames: brass-reinforced
         type: border
   building/door-brass:
+    category: building
+    layer: front
     code: 654
     material: metal
     shape: polygonal
+    size: [2, 2]
     ingredients: [['building/brass', 3], 'building/iron']
     inventory sprite: building/door-brass-open
     title: Brass Door
@@ -3339,12 +3369,15 @@ items:
 
   # ===== Signs ===== #
   sign: &sign
+    category: sign
+    layer: front
     meta: local
     hint: '@sign'
 
   signs/small: &sign-small
     <<: *sign
     title: Small Sign
+    size: [3, 1]
     karma: -2
     use:
       sign: true
@@ -3365,6 +3398,7 @@ items:
   signs/large: &sign-large
     <<: *sign
     title: Large Sign
+    size: [3, 2]
     karma: -4
     use:
       sign: true
@@ -3494,6 +3528,8 @@ items:
         z: -0.10
 
   signs/plaque-base: &plaque
+    category: signs
+    layer: front
     meta: global
     spacing: 50
     spacing_items:
@@ -4038,6 +4074,7 @@ items:
 
   rubble/skeleton:
     code: 970
+    size: [2, 1]
     group: remains
     craftable: false
     sprite: ['rubble/skeleton', 4]
@@ -4145,6 +4182,7 @@ items:
 
   # Vegetation
   vegetation: &vegetation
+    layer: front
     inventory: ground/flax
     material: shrubbery
 
@@ -4309,6 +4347,7 @@ items:
     color: '523b23'
     tileable: true
     mod: tiling
+    layer: front
     inventory: building/wood
     material: wood
     group: tree
@@ -4349,6 +4388,7 @@ items:
     inventory: building/wood
     material: wood
     group: tree
+    layer: front
     carryable: false
     title: Dead Tree
     sprite: ['vegetation/tree-dead-top', 2]
@@ -4365,6 +4405,7 @@ items:
     karma: -2
     report: true
     group: fungi
+    layer: front
 
   vegetation/mushroom-amanita:
     <<: *vegetation-mushrooms
@@ -4875,6 +4916,7 @@ items:
     ingredients: ['ground/flax', 'ground/resin']
   lighting/candlelabra:
     code: 1104
+    size: [2, 1]
     color: eeeedd
     material: metal
     background: lighting/candlelabra
@@ -4888,6 +4930,7 @@ items:
     title: Candelabra
   lighting/chandelier:
     code: 1008
+    size: [2, 2]
     color: eeeedd
     material: metal
     background: lighting/chandelier
@@ -5043,6 +5086,7 @@ items:
 
   furniture/bookshelf-tall:
     code: 770
+    size: [2, 4]
     material: wood
     title: Bookshelf
     background: furniture/bookshelf-tall
@@ -5050,6 +5094,7 @@ items:
     ingredients: [['building/wood-board', 5]]
   furniture/bookshelf-tall-full:
     code: 771
+    size: [2, 4]
     material: wood
     craftable: false
     title: Bookshelf
@@ -5058,6 +5103,7 @@ items:
 
   furniture/chair-plush:
     code: 772
+    size: [2, 2]
     material: soft
     title: Plush Chair
     ingredients: [['building/wood', 2], ['ground/feathers', 4], 'ground/flax']
@@ -5156,11 +5202,13 @@ items:
 
   furniture/table:
     code: 774
+    size: [2, 1]
     material: wood
     ingredients: [['building/wood-decorative', 2]]
 
   furniture/wardrobe:
     code: 775
+    size: [2, 3]
     material: wood
     ingredients: [['building/wood', 6]]
     karma: -2
@@ -5258,6 +5306,7 @@ items:
       command: true
   furniture/mirror-wall:
     code: 773
+    size: [2, 2]
     material: metal
     ingredients: ['building/wood-decorative', ['back/glass', 2], 'building/brass']
     title: Tall Mirror
@@ -5268,6 +5317,7 @@ items:
   furniture/bed:
     <<: *mirrorable
     code: 791
+    size: [3, 1]
     material: wood
     ingredients: [['building/wood', 3], ['ground/feathers', 4], ['ground/flax', 2]]
     crafting skill: ['building', 2]
@@ -5275,6 +5325,7 @@ items:
   furniture/bed-covered:
     <<: *mirrorable
     code: 792
+    size: [3, 2]
     material: wood
     background: furniture/bed
     sprite: furniture/bed-curtains
@@ -5351,6 +5402,7 @@ items:
   furniture/fireplace-large:
     <<: *furniture-fiery
     code: 795
+    size: [2, 2]
     material: wood
     ingredients: [['building/wood', 6], ['building/pitch', 2]]
     crafting skill: ['building', 3]
@@ -5395,6 +5447,8 @@ items:
     ingredients: [['building/brass', 50], ['building/iron', 50], ['ground/quartz-ore', 25], ['mechanical/friend-parts-gear', 25], ['back/glass', 10], 'ground/crystal-purple-1']
 
   furniture/art: &furniture-art
+    category: furniture
+    layer: front
     material: wood
     craftable: false
     karma: -12
@@ -5406,26 +5460,32 @@ items:
   furniture/head-deer:
     <<: *furniture-mounted-art
     code: 780
+    size: [2, 2]
     title: Deer Head
   furniture/head-bear:
     <<: *furniture-mounted-art
     code: 781
+    size: [2, 2]
     title: Bear Head
   furniture/head-cthulhu:
     <<: *furniture-mounted-art
     code: 782
+    size: [2, 2]
     title: Cthulhu Head
   furniture/head-fish:
     <<: *furniture-mounted-art
     code: 392
+    size: [2, 1]
     title: Mounted Fish
   furniture/head-tiger:
     <<: *furniture-mounted-art
     code: 393
+    size: [2, 2]
     title: Tiger Head
   furniture/head-jackalope:
     <<: *furniture-mounted-art
     code: 394
+    size: [2, 2]
     title: Jackalope Head
   furniture/head-predator:
     <<: *furniture-mounted-art
@@ -5434,10 +5494,12 @@ items:
   furniture/head-zebra:
     <<: *furniture-mounted-art
     code: 396
+    size: [2, 2]
     title: Zebra Head
   furniture/head-mammoth:
     <<: *furniture-mounted-art
     code: 217
+    size: [2, 2]
     title: Mammoth Head
 
   furniture/pinned-bee:
@@ -5512,6 +5574,7 @@ items:
 
   furniture/painting: &furniture-painting
     <<: *furniture-art
+    size: [2, 2]
     mounted: true
     special placement: framed
     sprites:
@@ -5647,22 +5710,27 @@ items:
   furniture/airship-in-bottle:
     <<: *furniture-art
     code: 693
+    size: [2, 2]
     title: Airship in a Bottle
   furniture/globe:
     <<: *furniture-art
     code: 686
+    size: [2, 2]
     rarity: 4
   furniture/moon:
     <<: *furniture-art
     code: 62
+    size: [2, 2]
     rarity: 5
   furniture/mars:
     <<: *furniture-art
     code: 63
+    size: [2, 2]
     rarity: 5
   furniture/solar-system-diorama:
     <<: *furniture-art
     code: 99
+    size: [2, 2]
     rarity: 5
 
   furniture/easel:
@@ -5983,6 +6051,7 @@ items:
   containers/chest-mechanical-large:
     <<: *containers-full-mod
     code: 824
+    size: [2, 1]
     material: metal
     title: Large Mechanical Chest
     use:
@@ -6072,6 +6141,7 @@ items:
   containers/sack-large:
     <<: *containers-sack
     code: 812
+    size: [2, 2]
     ingredients: [['ground/flax', 2]]
     gui: ['crop']
     background: ['containers/sack-large', 1]
@@ -6108,6 +6178,7 @@ items:
   containers/crate-large:
     <<: *containers-crate
     code: 814
+    size: [2, 2]
     ingredients: [['building/wood', 2]]
     gui: ['crop', 'scale 0.8']
     background: ['containers/crate-large', 2]
@@ -6140,6 +6211,7 @@ items:
   containers/crate-industrial-large:
     <<: *containers-crate-industrial
     code: 817
+    size: [2, 2]
     ingredients: [['building/iron', 3], 'building/brass']
     title: Large Industrial Crate
     spawn_entity:
@@ -6342,6 +6414,7 @@ items:
 
   # Music
   music: &music
+    layer: front
     material: wood
     emitter: music
     karma: -3
@@ -6397,6 +6470,8 @@ items:
 
   # Mechanical
   mechanical: &mechanical
+    category: mechanical
+    layer: front
     material: metal
     emitter: powered-steam-infrequent
     karma: -3
@@ -6514,6 +6589,7 @@ items:
     material: metal
     shape: polygonal
     shape_definition: mechanical/trapdoor-large
+    size: [2, 1]
     solid: true
     sprite: mechanical/trapdoor-large-closed
     hint: '@mechanical-door'
@@ -6714,6 +6790,7 @@ items:
 
   mechanical/switch-large:
     code: 939
+    size: [2, 2]
     material: metal
     sprite: mechanical/switch-large-off
     hint: '@mechanical-switch'
@@ -6779,6 +6856,7 @@ items:
 
   mechanical/switch-large-timed:
     code: 996
+    size: [2, 2]
     material: metal
     background: mechanical/switch-large-off
     sprite: mechanical/swtich-large-timer-off
@@ -6816,6 +6894,7 @@ items:
 
   mechanical/switch-large-fancy:
     code: 948
+    size: [2, 2]
     material: metal
     sprite: mechanical/switch-large-fancy-off
     meta: hidden
@@ -7194,6 +7273,7 @@ items:
     <<: *mechanical
     meta: hidden
     code: 853
+    size: [3, 3]
     group: collector
     placing skill: ['engineering', 2]
     ingredients: [['building/brass', 12], ['building/iron', 4], ['ground/quartz-ore', 3], 'ground/crystal-blue-1']
@@ -7275,6 +7355,7 @@ items:
   mechanical/engine:
     <<: *steam-powered
     code: 851
+    size: [4, 2]
     ingredients: [['building/brass', 25], ['building/iron', 15], ['building/pitch', 15], ['ground/quartz-ore', 4], 'ground/crystal-blue-1']
     crafting skill: ['engineering', 4]
     crafting_helper: true
@@ -7298,6 +7379,7 @@ items:
   mechanical/forge:
     <<: *steam-powered
     code: 852
+    size: [3, 3]
     mod: change
     ingredients: [['building/brass', 20], ['building/iron', 10], ['building/pitch', 4], 'ground/crystal-blue-1']
     crafting skill: ['engineering', 3]
@@ -8531,6 +8613,7 @@ items:
 
   mechanical/ecological: &ecological
     material: metal
+    layer: front
     craftable: false
     invulnerable: true
     group: ecology
@@ -9411,6 +9494,7 @@ items:
   mechanical/teleporter:
     <<: *mechanical
     code: 890
+    size: [2, 3]
     craftable: false
     field: 1
     meta: global
@@ -9538,6 +9622,7 @@ items:
   mechanical/zone-teleporter:
     <<: *mechanical
     code: 891
+    size: [3, 3]
     craftable: false
     field: 5
     meta: global
@@ -9711,12 +9796,14 @@ items:
 
   industrial/vat:
     code: 400
+    size: [2, 2]
     material: metal
     ingredients: [['building/iron', 6]]
     crafting skill: ['building', 3]
 
   industrial/vat-acid:
     code: 401
+    size: [2, 2]
     material: metal
     background: industrial/vat
     sprite: ['industrial/vat-acid', 4]
@@ -9727,6 +9814,7 @@ items:
   industrial/conveyor:
     <<: *mirrorable
     code: 402
+    size: [3, 1]
     material: metal
     sprite animation: ['industrial/conveyor-belt', 2]
     ingredients: [['building/iron', 4], ['building/brass', 2], ['ground/quartz-ore', 2]]
@@ -9749,6 +9837,7 @@ items:
 
   industrial/chain-large:
     code: 405
+    size: [2, 1]
     material: metal
     ingredients: [['building/iron', 2]]
     crafting skill: ['building', 3]
@@ -9768,6 +9857,7 @@ items:
 
   industrial/crane-large:
     code: 408
+    size: [2, 2]
     material: metal
     ingredients: [['building/iron', 4], ['building/brass', 4], ['ground/quartz-ore', 2]]
     crafting skill: ['engineering', 4]
@@ -9776,6 +9866,7 @@ items:
 
   industrial/crane-base-large:
     code: 409
+    size: [2, 1]
     material: metal
     ingredients: [['building/iron', 6], ['building/brass', 4]]
     crafting skill: ['building', 3]
@@ -9950,6 +10041,7 @@ items:
     ingredients: ['building/iron', ['building/wood', 2]]
 
   tools/melee: &melee
+    category: tools
     damage_duration: 0.444
     damage range: 6.0
 
@@ -10833,6 +10925,7 @@ items:
 
   # Sheilds
   shield: &shield
+    category: shields
     action: shield
     inventory type: accessory
     gui: ['trim', 'scale']
@@ -10886,11 +10979,13 @@ items:
   # Ammo
   ammo/bullets:
     code: 1035
+    layer: front
     ingredients: ['ground/lead-ore', 'ammo/gunpowder']
     sprite: containers/ammo-box
     karma: -2
   ammo/gunpowder:
     code: 1036
+    layer: front
     material: wood
     ingredients: ['building/wood', 'ground/guano', 'ground/sulfur-ore']
     sprite: containers/barrel-gunpowder
@@ -10899,6 +10994,7 @@ items:
   # Accessories
   accessory: &accessory
     inventory type: accessory
+    category: accessories
 
   charm: &charm
     <<: *accessory
@@ -11856,6 +11952,7 @@ items:
 
   tops: &tops
     <<: *wardrobe
+    category: tops
 
   tops/tuxedo:
     <<: *tops
@@ -12091,6 +12188,7 @@ items:
 
   headgear: &headgear
     <<: *wardrobe
+    category: headgear
 
   headgear/none:
     <<: *headgear
