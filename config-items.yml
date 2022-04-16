@@ -5818,6 +5818,7 @@ items:
 
   containers/full-mod: &containers-full-mod
     mod: change
+    loot_graphic: loot
     change:
       - inherit: true
         emitter: container full
