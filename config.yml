@@ -8,6 +8,204 @@ client_version:
   Windows: 3.8.0
   Unity: 3.8.0
 
+item_key_map:
+  tileable: tileable
+  opaque: opaque
+  whole: whole
+  shape: shape
+  shadow: shadow
+  solid: solid
+  border_shadow: border_shadow
+  mod: mod
+  rotation: rotation
+  code: code
+  visible: visible
+  invulnerable: invulnerable
+  placeover: placeover
+  char: char
+  hintt: hintt
+  gui: gui
+  excavatable: excavatable
+  continuity: continuity
+  sprites+: sprites+
+  title: title
+  sprites: sprites
+  color: color
+  border_wholeness: border-wholeness
+  spawn: spawn
+  background: background
+  sprite_continuity: sprite-continuity
+  sprite_continuity_animation: sprite-continuity-animation
+  sprite_continuity_animation_opacity: sprite_continuity_animation_opacity
+  sprite_z: sprite_z
+  sprite: sprite
+  border-continuity_external: border-continuity-external
+  border_continuity_external: border_continuity_external
+  border_continuity_color: border_continuity_color
+  sprite_opacity: sprite_opacity
+  karma: karma
+  drain_level: drain_level
+  mod_max: mod_max
+  rarity: rarity
+  damage: damage
+  light: light
+  light_color: light_color
+  emitter: emitter
+  level: level
+  lootable: lootable
+  material: material
+  ingredients: ingredients
+  crafting_quantity: crafting quantity
+  border_continuity: border-continuity
+  toughness: toughness
+  decay_inventory: decay inventory
+  border_continuity_color: border-continuity-color
+  crafting_skill: crafting skill
+  border_inventory: border-inventory
+  group: group
+  craftable: craftable
+  inventory: inventory
+  diggable: diggable
+  earthy: earthy
+  overlay_prefab: overlay_prefab
+  spawn_entity: spawn_entity
+  mask: mask
+  mask_alternative: mask_alternative
+  mining_skill: mining skill
+  wiki: wiki
+  stealable: stealable
+  use: use
+  adjacent_mine: adjacent_mine
+  growth: growth
+  carryable: carryable
+  hint: hint
+  mounted: mounted
+  inventory_frame: inventory_frame
+  frequency: frequency
+  biome: biome
+  mining_bonus: mining_bonus
+  fieldable: fieldable
+  mining_bonus: mining bonus
+  report: report
+  damage_min_velocity: damage_min_velocity
+  entity: entity
+  use_proximity: use_proximity
+  spawn_entity_crafting_quantity: spawn_entity_crafting quantity
+  jiggle: jiggle
+  change: change
+  inventory_sprite: inventory sprite
+  door: door
+  shelter: shelter
+  sprite_continuity_config: sprite-continuity-config
+  continuity_corners: continuity_corners
+  sprite-color: sprite-color
+  shape_definition: shape_definition
+  craft: craft
+  custom_place: custom_place
+  meta: meta
+  spacing: spacing
+  spacing_items: spacing_items
+  target: target
+  sections: sections
+  place_hint: place_hint
+  place_constraints: place_constraints
+  mod_inventory: mod_inventory
+  spawn_spacing: spawn_spacing
+  field: field
+  role: role
+  special_placement: special placement
+  tradeable: tradeable
+  membership: membership
+  custom_mine: custom_mine
+  ownership: ownership
+  size: size
+  admin_sprite: admin_sprite
+  metadata: metadata
+  center: center
+  adjacent_change: adjacent_change
+  place_mod: place mod
+  placing_skill: placing skill
+  sprite_animation: sprite animation
+  light_position: light position
+  light_position: light_position
+  timer: timer
+  timer_delay: timer_delay
+  quantity: quantity
+  place_transform: place_transform
+  loot: loot
+  loot_graphic: loot_graphic
+  loot_xp: loot_xp
+  field_place: field_place
+  placing_cost: placing_cost
+  place_entity: place_entity
+  place_entity_sprite: place_entity_sprite
+  door_switched: door_switched
+  speed: speed
+  burst: burst
+  steam: steam
+  crafting_helper: crafting_helper
+  power: power
+  crafting_helpers: crafting_helpers
+  crafting_events: crafting_events
+  sound_loop: sound_loop
+  sound_loop_volume: sound_loop_volume
+  guard: guard
+  xp: xp
+  spawner: spawner
+  field_coverage: field_coverage
+  timer_requirement: timer_requirement
+  timer_mine: timer_mine
+  sound: sound
+  reach: reach
+  chromatic: chromatic
+  field_damage: field_damage
+  sprite_animation_color: sprite animation color
+  damage_duration: damage_duration
+  damage_range: damage range
+  action: action
+  powerV3: powerV3
+  bonus: bonus
+  life: life
+  auto_equip: auto_equip
+  critical_hit: critical_hit
+  glow: glow
+  glow_sprite: glow_sprite
+  ammo_cost: ammo cost
+  rate: rate
+  shoot_emitter: shoot emitter
+  muzzle: muzzle
+  inventory type: inventory type
+  defense: defense
+  tooltip: tooltip
+  short_hint: short_hint
+  consumable: consumable
+  action_track: action_track
+  power_bonus: power_bonus
+  duration: duration
+  convert: convert
+  placeable: placeable
+  wardrobe: wardrobe
+  base: base
+  deprecated: deprecated
+  spine_sprite: spine_sprite
+  hand: hand
+  covered: covered
+  input_sprite: input_sprite
+  type: type
+  secondary: secondary
+  bounce: bounce
+  animations: animations
+  animation: animation
+  appearance: appearance
+  supercede_inventory: supercede_inventory
+  damage_range: damage_range
+  attack_interval: attack_interval
+  attack_duration: attack_duration
+  layer: layer
+  category: category
+  block_size: size
+  inherit: inherit
+
 # ===== Inventory order ===== #
 
 inventory:
