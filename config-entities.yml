@@ -3316,13 +3316,13 @@ entities:
     damage: ['stink', 0.1]
     angular velocity range: 10
     sound: torch_whoosh06
-    color: 5d7747
+    color: '5d7747'
     color animation:
       life: 1.0
       colors:
-        - 5d7747
-        - 7b835c
-        - 4a4a33
+        - '5d7747'
+        - '7b835c'
+        - '4a4a33'
 
   bullets/magnet:
     <<: *bullet
@@ -3358,7 +3358,7 @@ entities:
     sprites:
       - ['body', ['particles/steam', 4]]
     spritesV3: ['particles/steam', 4]
-    color: 38210a
+    color: '38210a'
     color animation:
       life: 1.0
       colors:

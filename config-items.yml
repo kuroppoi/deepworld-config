@@ -92,7 +92,7 @@ items:
     opaque: true
     border-wholeness: earth
     border_continuity_external: ['masks/border-external', 12]
-    border_continuity_color: 1a0e00
+    border_continuity_color: '1a0e00'
     title: Earth Backdrop
     hintt: 'A rare handheld chunk of earth backdrop, sometimes referred to as "Bruce".'
 
@@ -182,7 +182,7 @@ items:
     sprite-continuity-animation: ['base/steam-moving', 2]
     sprite_continuity_animation_opacity: 128
     border-wholeness: earth
-    color: 715a35
+    color: '715a35'
     char: V
     sprite_z: 5
     hintt: '@vent'
@@ -199,7 +199,7 @@ items:
     sprite: ''
     sprite-continuity: base/steam-vent-cap
     border-wholeness: earth
-    color: 715a35
+    color: '715a35'
     char: x
     sprite_z: 5
     hintt: '@vent'
@@ -245,7 +245,7 @@ items:
     opaque: true
     border-wholeness: earth
     border_continuity_external: ['masks/border-external', 12]
-    border_continuity_color: 45321a
+    border_continuity_color: '45321a'
     title: Earth Backdrop Accent
     excavatable: true
     sprites:
@@ -263,7 +263,7 @@ items:
 
   liquid/water:
     code: 100
-    color: 59c2fc
+    color: '59c2fc'
     tileable: true
     sprite: liquid/water-1
     sprite_opacity: 0.7
@@ -280,11 +280,11 @@ items:
         tileable: true
   liquid/acid:
     code: 101
-    color: 63f85f
+    color: '63f85f'
     tileable: true
     damage: ['acid', 0.5]
     light: 2
-    light_color: 217f30
+    light_color: '217f30'
     sprite: liquid/acid-1
     sprite_opacity: 0.75
     emitter: acid bubbles
@@ -301,13 +301,13 @@ items:
         tileable: true
   liquid/magma:
     code: 102
-    color: ff1610
+    color: 'ff1610'
     tileable: true
     opaque: true
     whole: true
     damage: ['fire', 0.75]
     light: 2
-    light_color: ac3028
+    light_color: 'ac3028'
     sprite: liquid/magma-1
     sprite_opacity: 0.85
     emitter: magma embers
@@ -459,7 +459,7 @@ items:
     ingredients: ['ground/sandstone']
     crafting quantity: 3
     border-continuity: brick-back
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     title: Sandstone Brick Backdrop
     toughness: 2
     hintt: 'A simple backdrop to complement your sandstone constructions.'
@@ -495,7 +495,7 @@ items:
     ingredients: ['ground/stone']
     crafting quantity: 3
     border-continuity: brick-back
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     title: Tan Cobblestone Backdrop
     toughness: 2
     decay inventory: rubble/stone-pile-1
@@ -537,7 +537,7 @@ items:
     ingredients: ['ground/clay']
     crafting quantity: 3
     border-continuity: brick-back
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     title: Tan Brick Backdrop
     crafting skill: ['building', 2]
     toughness: 1
@@ -550,7 +550,7 @@ items:
     ingredients: ['ground/clay']
     crafting quantity: 3
     border-continuity: brick-back
-    border-continuity-color: 525c70
+    border-continuity-color: '525c70'
     title: Blue Brick Backdrop
     crafting skill: ['building', 2]
     toughness: 1
@@ -755,7 +755,7 @@ items:
     code: 258
     level: 4
     tileable: true
-    color: 45464a
+    color: '45464a'
     material: metal
     title: Decayed Scaffolding
     craftable: false
@@ -789,7 +789,7 @@ items:
     level: 1
     diggable: true
     continuity: ground/earth
-    border_continuity_color: 45321a
+    border_continuity_color: '45321a'
     border_continuity_external: ['masks/border-external', 12]
     material: earth
     craftable: false
@@ -960,12 +960,12 @@ items:
     code: 511
     diggable: true
     border_continuity_external: ['masks/border-external', 12]
-    border_continuity_color: 292f25
+    border_continuity_color: '292f25'
     sprite_z: 2
     material: stone
     craftable: false
     overlay_prefab: true
-    color: 494f45
+    color: '494f45'
     title: Limestone
     sprites:
       - frames: ground/limestone
@@ -981,7 +981,7 @@ items:
     level: 10
     code: 506
     border_continuity_external: ['masks/border-external', 12]
-    border_continuity_color: 292f25
+    border_continuity_color: '292f25'
     sprite_z: 3
     material: bone
     overlay_prefab: true
@@ -1497,7 +1497,7 @@ items:
 
   ground/resin:
     code: 539
-    color: 3e3e3e
+    color: '3e3e3e'
     craftable: false
     sprite: ['ground/resin', 3]
     stealable: true
@@ -1819,7 +1819,7 @@ items:
   # Caves
 
   ground/formation: &ground-formation
-    color: 715a35
+    color: '715a35'
     material: stone
     inventory: ground/stone
     mod: rotation
@@ -1871,7 +1871,7 @@ items:
     title: Large Geyser
 
   ground/crystal: &ground-crystal
-    color: 3169bd
+    color: '3169bd'
     material: glass
     damage: ['piercing', 0.3]
     damage_min_velocity: 5
@@ -1885,7 +1885,7 @@ items:
 
   ground/crystal-blue: &ground-crystal-blue
     <<: *ground-crystal
-    light_color: 3433ff
+    light_color: '3433ff'
     inventory: ground/crystal-blue-1
     title: Blue Crystal
     karma: -5
@@ -1913,7 +1913,7 @@ items:
 
   ground/crystal-purple-1:
     <<: *ground-crystal
-    light_color: 5e2388
+    light_color: '5e2388'
     code: 584
     karma: -10
     title: Purple Crystal
@@ -1951,14 +1951,14 @@ items:
     <<: *ground-crystal
     code: 53
     title: Green Crystal
-    light_color: 03ff58
+    light_color: '03ff58'
     karma: -10
 
   ground/crystal-green-large:
     <<: *ground-crystal
     code: 54
     title: Large Green Crystal
-    light_color: 03ff58
+    light_color: '03ff58'
     karma: -15
 
   ground/crystal-white-small:
@@ -2174,7 +2174,7 @@ items:
     toughness: 2
     hint: Blackrock is the toughest known natural stone. It is unmineable and can only be cleared with the use of bombs.
     border-continuity-external: ['masks/border-external', 12]
-    color: 2a2a2a
+    color: '2a2a2a'
     sprite_z: 3
     sprites:
       - frames: ground/blackrock
@@ -2258,7 +2258,7 @@ items:
     ingredients: ['ground/clay']
     crafting quantity: 2
     border-continuity: brick
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     mod: decay
     crafting skill: ['building', 2]
     toughness: 1
@@ -2272,7 +2272,7 @@ items:
     ingredients: ['ground/clay']
     crafting quantity: 2
     border-continuity: brick
-    border-continuity-color: 525c70
+    border-continuity-color: '525c70'
     mod: decay
     crafting skill: ['building', 2]
     toughness: 1
@@ -2317,7 +2317,7 @@ items:
 
   building/door-wood:
     code: 610
-    color: 515a25
+    color: '515a25'
     char: D
     material: wood
     inventory sprite: building/door-wood-open
@@ -2397,7 +2397,7 @@ items:
     material: stone
     ingredients: ['ground/sandstone']
     border-continuity: brick
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     mod: decay
     toughness: 1
     title: Sandstone Brick
@@ -2434,7 +2434,7 @@ items:
     ingredients: ['ground/stone']
     crafting quantity: 3
     border-continuity: brick
-    border-continuity-color: 7e8e65
+    border-continuity-color: '7e8e65'
     mod: decay
     toughness: 1
     decay inventory: rubble/stone-pile-1
@@ -2513,15 +2513,15 @@ items:
   building/crystal-blue:
     <<: *building-crystal
     code: 604
-    sprite-color: 6463ff
-    light_color: 3433ff
+    sprite-color: '6463ff'
+    light_color: '3433ff'
     ingredients: [['ground/crystal-blue-1', 2], ['ground/quartz-ore', 3]]
     crafting skill: ['building', 7]
     crafting quantity: 2
     title: Blue Crystal Block
     sprites:
       - frames: building/crystal-whole
-        color: 6463ff
+        color: '6463ff'
 
   building/crystal-red:
     <<: *building-crystal
@@ -2539,19 +2539,19 @@ items:
   building/crystal-purple:
     <<: *building-crystal
     code: 606
-    sprite-color: 8e53a8
-    light_color: 5e2388
+    sprite-color: '8e53a8'
+    light_color: '5e2388'
     ingredients: ['ground/crystal-blue-1', 'ground/crystal-purple-1', ['ground/quartz-ore', 3]]
     crafting skill: ['building', 8]
     crafting quantity: 2
     title: Purple Crystal Block
     sprites:
       - frames: building/crystal-whole
-        color: 8e53a8
+        color: '8e53a8'
 
 
   roofing: &roofing
-    color: 3a3a3a
+    color: '3a3a3a'
     material: wood
     shelter: true
     shadow: true
@@ -2856,7 +2856,7 @@ items:
   # Decoration
   building/gargoyle: &building-gargoyle
     material: stone
-    color: 7a7a7a
+    color: '7a7a7a'
     title: Gargoyle
     toughness: 3
     karma: -5
@@ -3925,7 +3925,7 @@ items:
     material: stone
     fieldable: false
     inventory: rubble/stone-pile-1
-    color: 695f4c
+    color: '695f4c'
     hint: '@rubble'
     gui: false
     title: Stone Rubble
@@ -3977,7 +3977,7 @@ items:
     material: wood
     fieldable: false
     inventory: rubble/wood-1
-    color: 695f4c
+    color: '695f4c'
     shape: polygonal
     hint: '@rubble'
     gui: false
@@ -4154,7 +4154,7 @@ items:
     placeover: true
     fieldable: false
     sprite: ['vegetation/shrub-dead', 6]
-    color: 366b18
+    color: '366b18'
     char: ⠤
 
   vegetation/grass:
@@ -4306,7 +4306,7 @@ items:
 
   vegetation/tree-dead-trunk:
     code: 720
-    color: 523b23
+    color: '523b23'
     tileable: true
     mod: tiling
     inventory: building/wood
@@ -4319,12 +4319,12 @@ items:
         type: modtile
   vegetation/tree-dead-roots: &vegetation-tree-dead-roots
     <<: *front-block
-    color: 523b23
+    color: '523b23'
     mod: tiling
     background: ground/earth
     continuity: ground/earth
     border-continuity-external: ['masks/border-external', 12]
-    border_continuity_color: 1a0e00
+    border_continuity_color: '1a0e00'
     inventory: building/wood
     material: wood
     group: tree
@@ -4400,13 +4400,13 @@ items:
     sprite: ['vegetation/mushroom-acid', 2]
     title: Acid Mushroom
     light: 2
-    light_color: 86df46
+    light_color: '86df46'
   vegetation/mushroom-acid-tall:
     <<: *vegetation-mushrooms
     code: 742
     title: Elder Acid Mushroom
     light: 3
-    light_color: 86df46
+    light_color: '86df46'
     karma: -3
 
   vegetation/mushroom-anbaric:
@@ -6280,7 +6280,7 @@ items:
         sprite: containers/pandora-box-open
         inherit: true
         light: 5.0
-        light_color: 55ff11
+        light_color: '55ff11'
 
   containers/wine-bottle:
     code: 809
@@ -6663,7 +6663,7 @@ items:
         background: mechanical/switch-on
         sprite: mechanical/switch-color-green
         light: 0.25
-        light_color: 00ff00
+        light_color: '00ff00'
         inherit: true
       - name: mechanical/switch-blue-off
         background: mechanical/switch-off
@@ -6673,7 +6673,7 @@ items:
         background: mechanical/switch-on
         sprite: mechanical/switch-color-blue
         light: 0.25
-        light_color: 0000ff
+        light_color: '0000ff'
         inherit: true
 
   mechanical/switch-timed:
@@ -6764,7 +6764,7 @@ items:
         background: mechanical/switch-large-on
         sprite: mechanical/switch-large-color-green
         light: 0.25
-        light_color: 00ff00
+        light_color: '00ff00'
         inherit: true
       - name: mechanical/switch-large-blue-off
         background: mechanical/switch-large-off
@@ -6774,7 +6774,7 @@ items:
         background: mechanical/switch-large-on
         sprite: mechanical/switch-large-color-blue
         light: 0.25
-        light_color: 0000ff
+        light_color: '0000ff'
         inherit: true
 
   mechanical/switch-large-timed:
@@ -7235,7 +7235,7 @@ items:
     change:
       - background: mechanical/suppressor
         sprite: mechanical/suppressor-overlay
-        sprite-color: 00ff00
+        sprite-color: '00ff00'
         inherit: true
         sound_loop: deflectorhum
   mechanical/replenisher:
@@ -7561,8 +7561,8 @@ items:
     karma: -10
     toughness: 10
     light: 0.25
-    light_color: 00ff00
-    color: 00ff00
+    light_color: '00ff00'
+    color: '00ff00'
     report: true
     gui: false
     use:
@@ -7603,8 +7603,8 @@ items:
     gui: false
     toughness: 10
     light: 0.25
-    light_color: 0000ff
-    color: 0000ff
+    light_color: '0000ff'
+    color: '0000ff'
     field: 10
     use:
       template: capture
@@ -9044,7 +9044,7 @@ items:
 
   hell/expiator: &expiator
     material: metal
-    color: 766a5a
+    color: '766a5a'
     craftable: false
     invulnerable: true
     use:
@@ -9102,7 +9102,7 @@ items:
     title: Infernal Protector
     hint: Infernal protectors cause damage as well as protecting blocks, and can only be disabled by delivering enough souls with the expiator.
     special placement: unique
-    color: 781e6e
+    color: '781e6e'
     inventory: ''
     karma: -5
     use:
@@ -9431,12 +9431,12 @@ items:
       - name: mechanical/teleporter-active
         inherit: true
         sprite animation: ['mechanical/teleporter-glow', 2]
-        sprite animation color: 5accfd
+        sprite animation color: '5accfd'
         sprites:
           - frames: mechanical/teleporter
           - frames: ['mechanical/teleporter-glow', 2]
             type: animated
-            color: 5accfd
+            color: '5accfd'
 
   mechanical/teleporter-mini:
     <<: *mechanical
@@ -9467,7 +9467,7 @@ items:
     meta: hidden
     background: mechanical/teleporter-mini-diamond-base
     sprite animation: ['mechanical/teleporter-mini-motes', 3]
-    sprite animation color: 44aaff
+    sprite animation color: '44aaff'
     emitter: diamond sparkles
     inventory sprite: mechanical/teleporter-mini-diamond-onyx
     title: Diamond Target Teleporter
@@ -9571,7 +9571,7 @@ items:
     gui: false
     background: mechanical/teleporter
     sprite animation: ['mechanical/teleporter-glow', 2]
-    sprite animation color: 111111
+    sprite animation color: '111111'
     title: One-Way Teleporter
     karma: -10
     #sound_loop: wobble_02
@@ -9595,7 +9595,7 @@ items:
     gui: false
     background: mechanical/zone-teleporter
     sprite animation: ['mechanical/zone-teleporter-glow', 2]
-    sprite animation color: 111111
+    sprite animation color: '111111'
     title: One-Way World Teleporter
     karma: -20
     #sound_loop: wobble_02
@@ -9902,7 +9902,7 @@ items:
     level: 20
     code: 936
     border-continuity: brick
-    border-continuity-color: 7e2e2e
+    border-continuity-color: '7e2e2e'
     sprite_z: 3
     material: wood
     # ingredients: [['holiday/candy-cane-small', 10]]
@@ -10589,7 +10589,7 @@ items:
     shoot emitter: acid puff burst stronger
     muzzle: tools/muzzle-flash-gun-acid
     glow_sprite: tools/gun-acid-mk3-glow
-    color: 22ff55
+    color: '22ff55'
 
   tools/gun-type-flame: &tools-gun-type-flame
     ammo cost: 0.1
@@ -10748,7 +10748,7 @@ items:
     muzzle: tools/muzzle-flash-gun-frost
     shoot emitter: cold puff stronger
     glow_sprite: tools/gun-frost-mk3-glow
-    color: 11aaff
+    color: '11aaff'
 
   tools/gun-type-energy: &tools-gun-type-energy
     ammo cost: 0.1
@@ -10856,7 +10856,7 @@ items:
     <<: *shield
     code: 1121
     title: Acid Shield
-    color: 22ff88
+    color: '22ff88'
     sprite: accessories/shield-acid
     defense:
       acid: 1.0
@@ -10871,7 +10871,7 @@ items:
     code: 1122
     title: Fire Shield
     sprite: accessories/shield-fire
-    color: ff4422
+    color: 'ff4422'
     defense:
       fire: 1.0
       cold: 1.0
@@ -12724,7 +12724,7 @@ items:
   footwear/shoes-brown:
     <<: *shoes
     code: 1361
-    color: 7d6f60
+    color: '7d6f60'
   footwear/shoes-navy:
     <<: *shoes
     code: 1362
@@ -12732,7 +12732,7 @@ items:
   footwear/shoes-red:
     <<: *shoes
     code: 1363
-    color: 901c1c
+    color: '901c1c'
 
   footwear/boot-heeled:
     <<: *wardrobe
@@ -12806,7 +12806,7 @@ items:
   bottoms/pants-brown:
     <<: *pants
     code: 1381
-    color: 7d6f60
+    color: '7d6f60'
   bottoms/pants-navy:
     <<: *pants
     code: 1382
@@ -12814,7 +12814,7 @@ items:
   bottoms/pants-red:
     <<: *pants
     code: 1383
-    color: 901c1c
+    color: '901c1c'
   bottoms/pants-dandy:
     <<: *wardrobe
     code: 1384
@@ -12943,7 +12943,7 @@ items:
   bottoms/dress-brown:
     <<: *dress
     code: 1391
-    color: 7d6f60
+    color: '7d6f60'
   bottoms/dress-navy:
     <<: *dress
     code: 1392
@@ -12951,7 +12951,7 @@ items:
   bottoms/dress-red:
     <<: *dress
     code: 1393
-    color: 901c1c
+    color: '901c1c'
 
   bottoms/dress-polka:
     <<: *wardrobe

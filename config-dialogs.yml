@@ -86,7 +86,7 @@ dialogs:
     sections:
       - title: "Change your name"
         text: Enter your new name. No spaces or special characters please.
-        text-color: 30201a
+        text-color: '30201a'
         input:
           type: text
           key: playername
@@ -552,7 +552,7 @@ dialogs:
   report:
     - title: Report a player
     - text: "Press one of the following options to report this player:"
-      text-color: 3a3a3a
+      text-color: '3a3a3a'
     - text: "I want to mute them"
       choice: mute
     - text: "They are griefing"
@@ -652,14 +652,14 @@ dialogs:
           - title: Mass Teleporter
           - text: Configure machine
             choice: configure
-            text-color: 40c0ff
+            text-color: '40c0ff'
           - text: Destroy natural teleporters
             choice: deactivate_natural_teleporters
-            text-color: 40c0ff
+            text-color: '40c0ff'
             power: 2
           - text: Dismantle machine
             choice: dismantle
-            text-color: 40c0ff
+            text-color: '40c0ff'
 
       configure:
         sections:
@@ -693,10 +693,10 @@ dialogs:
           - title: Mass Spawner
           - text: Configure machine
             choice: configure
-            text-color: 40c0ff
+            text-color: '40c0ff'
           - text: Dismantle machine
             choice: dismantle
-            text-color: 40c0ff
+            text-color: '40c0ff'
 
       configure:
         sections:
@@ -730,10 +730,10 @@ dialogs:
           - title: Weather
           - text: Configure machine
             choice: configure
-            text-color: 40c0ff
+            text-color: '40c0ff'
           - text: Dismantle machine
             choice: dismantle
-            text-color: 40c0ff
+            text-color: '40c0ff'
 
       configure:
         show_errors: true
@@ -787,13 +787,13 @@ dialogs:
           - title: Start Minigame
           - text: Customize
             choice: customize
-            text-color: 40c0ff
+            text-color: '40c0ff'
           - text: Use last settings from this obelisk
             choice: last
-            text-color: 40c0ff
+            text-color: '40c0ff'
           - text: Copy settings from another minigame
             choice: copy
-            text-color: 40c0ff
+            text-color: '40c0ff'
 
       customize:
         show_errors: true
@@ -801,7 +801,7 @@ dialogs:
           - title: Minigame
           - text: Scoring
           - text: Scoring can be restricted to certain mobs / tools / blocks on the next page. Visit the Codex website to see a list of all item and entity codes.
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text select
               options: ['Players killed', 'Mobs killed', 'Blocks mined', 'Items crafted']
@@ -833,10 +833,10 @@ dialogs:
         sections:
           - title: Minigame Options
           - text: You can customize your minigame further with the following options, or you can leave any or all of them blank.
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
           - text: Tool restriction (optional)
           - text: "Enter an item code for the required tool (e.g., restrict to pistol kills with code 1033)"
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text
               conversion:
@@ -847,7 +847,7 @@ dialogs:
               key: tool_restriction
           - text: Block restriction (optional)
           - text: "Enter an item code for the required block (e.g., restrict to dirt mining with code 512)"
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text
               conversion:
@@ -858,7 +858,7 @@ dialogs:
               key: block_restriction
           - text: Mob restriction (optional)
           - text: "Enter a mob code for the required mob (e.g., restrict to terrapus kills with code 4)"
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text
               conversion:
@@ -869,14 +869,14 @@ dialogs:
               key: entity_restriction
           - text: Death restriction (optional)
           - text: "Number of deaths before a contestant is disqualified"
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text select
               options: ['None', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
               key: max_deaths
           - text: Natural restriction
           - text: "Only count blocks/mobs that are natural or unnatural (spawned, etc.)"
-            text-color: 3a3a3a
+            text-color: '3a3a3a'
             input:
               type: text select
               options: ["Natural", "Unnatural", "All"]

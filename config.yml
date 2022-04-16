@@ -1713,7 +1713,7 @@ notifications:
     prefab: small
   19:
     type: chat
-    color: 00ff00
+    color: '00ff00'
   20:
     type: chat
     color: eeeeee

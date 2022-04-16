@@ -314,7 +314,7 @@
           background: mechanical/switch-on
           sprite: mechanical/switch-color-green
           light: 0.25
-          light_color: 00ff00
+          light_color: '00ff00'
           inherit: true
         - name: mechanical/switch-blue-off
           background: mechanical/switch-off
@@ -324,7 +324,7 @@
           background: mechanical/switch-on
           sprite: mechanical/switch-color-blue
           light: 0.25
-          light_color: 0000ff
+          light_color: '0000ff'
           inherit: true
 
     mechanical/switch-timed:
@@ -392,7 +392,7 @@
           background: mechanical/switch-large-on
           sprite: mechanical/switch-large-color-green
           light: 0.25
-          light_color: 00ff00
+          light_color: '00ff00'
           inherit: true
         - name: mechanical/switch-large-blue-off
           background: mechanical/switch-large-off
@@ -402,7 +402,7 @@
           background: mechanical/switch-large-on
           sprite: mechanical/switch-large-color-blue
           light: 0.25
-          light_color: 0000ff
+          light_color: '0000ff'
           inherit: true
 
     mechanical/switch-large-timed:
@@ -469,7 +469,7 @@
           background: mechanical/switch-large-fancy-on
           sprite: mechanical/switch-large-color-green
           light: 0.25
-          light_color: 00ff00
+          light_color: '00ff00'
           inherit: true
         - name: mechanical/switch-large-fancy-blue-off
           background: mechanical/switch-large-fancy-off
@@ -479,7 +479,7 @@
           background: mechanical/switch-large-fancy-on
           sprite: mechanical/switch-large-color-blue
           light: 0.25
-          light_color: 0000ff
+          light_color: '0000ff'
           inherit: true
 
     mechanical/touchplate:
@@ -866,7 +866,7 @@
       sprite: ''
       sprite-continuity: base/steam-vent-cap
       border-wholeness: earth
-      color: 715a35
+      color: '715a35'
       sprite_z: -0.1
 
     base/drawing: &base-drawing
@@ -1055,7 +1055,7 @@
       title: Mechanical Sign
       karma: -5
       material: metal
-      color: a28219
+      color: 'a28219'
       ingredients: [['building/iron', 6], ['building/brass', 6], ['ground/quartz-ore', 6], 'ground/crystal-blue-1']
       crafting skill: ['engineering', 7]
       use:
@@ -1164,7 +1164,7 @@
       sections:
         - title: Register to continue and save your progress!
           text: Connect with Facebook to save your progress and log in from different devices. If you prefer, you can enter an email and password instead.
-          text-color: 30201a
+          text-color: '30201a'
           text-scale: 0.9
 
     request_email_registration:
@@ -1172,7 +1172,7 @@
       sections:
         - title: Register to save your progress!
           text: Enter your email address and desired password to save your progress and log in from different devices.
-          text-color: 30201a
+          text-color: '30201a'
           text-scale: 0.8
         - input:
             type: text
@@ -1191,7 +1191,7 @@
       sections:
         - title: "Change your name"
           text: Enter your new name. No spaces or special characters please.
-          text-color: 30201a
+          text-color: '30201a'
           input:
             type: text
             title: New name
@@ -1446,7 +1446,7 @@
       sections:
         - title: Report a player
         - text: "Press one of the following options to report this player:"
-          text-color: 3a3a3a
+          text-color: '3a3a3a'
         - text: "I want to mute them"
           choice: mute
         - text: "They are griefing"
