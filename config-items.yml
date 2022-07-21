@@ -6481,6 +6481,7 @@ items:
     code: 930
     material: metal
     shape: polygonal
+    size: [1, 2]
     solid: true
     shape_definition: mechanical/door
     sprite: mechanical/door-closed
