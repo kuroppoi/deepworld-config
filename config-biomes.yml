@@ -725,7 +725,7 @@ biomes:
       ground/earth: desert/earth-front
       ground/earth-deep: desert/earth-front-deep
       ground/earth-deeper: desert/earth-front-deeper
-      ground/earth-deepest: desert/earth-front-deepest
+      ground/earth-deepest: desert/earth-front-deeper
       ground/stalagmite-1: desert/stalagmite-1
       ground/stalagmite-2: desert/stalagmite-2
       ground/stalagmite-3: desert/stalagmite-3
