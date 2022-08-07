@@ -123,6 +123,7 @@ achievements:
     <<: *achievement-tier-2
     <<: *achievement-bonus-2
     base: Scavenger
+    previous: Scavenger
     quantity: 50
     directions: Mine 50 different kinds of items.
 
@@ -173,6 +174,7 @@ achievements:
   # Master Forager:
   #   <<: *achievement-bonus-3
   #   base: Forager
+  #   previous: Forager
   #   type: ScavengingAchievement
   #   directions: Discover and mine one of each kind of mushroom, including elders.
   #   commands:
@@ -227,6 +229,7 @@ achievements:
   # Master Horticulturalist:
   #   <<: *achievement-bonus-4
   #   base: Horticulturalist
+  #   previous: Horticulturalist
   #   type: ScavengingAchievement
   #   directions: Grow and mine 10 of each kind of flower, including rare flowers and trees.
   #   commands:
@@ -325,6 +328,7 @@ achievements:
     <<: *deliverer
     <<: *achievement-bonus-3
     base: Deliverer
+    previous: Deliverer
     quantity: 50
     directions: Deliver 50 ghosts from the fires of Hell using an Expiator.
 
@@ -345,6 +349,7 @@ achievements:
     <<: *achievement-bonus-2
     <<: *achievement-tier-2
     base: Hunter
+    previous: Hunter
     quantity: 500
     directions: Hunt down and kill 500 creatures.
 
@@ -384,6 +389,7 @@ achievements:
     <<: *achievement-tier-2
     <<: *achievement-bonus-2
     base: Recycler
+    previous: Recycler
     quantity: 500
     directions: Hunt down and junk 500 automata.
 
@@ -423,6 +429,7 @@ achievements:
     <<: *achievement-tier-2
     <<: *achievement-bonus-2
     base: Ghost Hunter
+    previous: Ghost Hunter
     quantity: 500
     directions: Destroy 500 ghosts.
 
@@ -532,6 +539,7 @@ achievements:
     <<: *sidekick
     <<: *achievement-bonus-2
     base: Sidekick
+    previous: Sidekick
     quantity: 100
     directions: Assist others in the destruction of 100 enemies.
 
@@ -550,6 +558,7 @@ achievements:
     <<: *teleporter-repairman
     <<: *achievement-bonus-2
     base: Teleporter Repairman
+    previous: Teleporter Repairman
     quantity: 25
     directions: Repair 25 teleporters.
 
@@ -568,6 +577,7 @@ achievements:
     <<: *ecologist
     <<: *achievement-bonus-2
     base: Ecologist
+    previous: Ecologist
     quantity: 25
     directions: Recover 25 ecological machine parts.
 
@@ -587,6 +597,7 @@ achievements:
     <<: *infernal-scout
     <<: *achievement-bonus-3
     base: Infernal Scout
+    previous: Infernal Scout
     quantity: 25
     directions: Recover 25 expiator parts.
 
@@ -636,6 +647,7 @@ achievements:
     description: Steampunk wonder workshop or mad science laboratory - it's your choice! Crank up the Tesla Coils and make some stuff!
     directions: Workshop 5 different items.
     type: CraftingAchievement
+    workshopped: true
     commands:
       - Craft
     quantity: 5
@@ -648,17 +660,18 @@ achievements:
     <<: *achievement-tier-2
     <<: *achievement-bonus-3
     base: Scientist
+    previous: Scientist
     quantity: 10
     directions: Workshop 10 different items.
 
-  # Grandmaster Scientist:
-  #   <<: *scientist
-  #   <<: *achievement-tier-3
-  #   <<: *achievement-bonus-4
-  #   base: Scientist
-  #   previous: Master Scientist
-  #   quantity: 20
-  #   directions: Workshop 20 different items.
+  Grandmaster Scientist:
+    <<: *scientist
+    <<: *achievement-tier-3
+    <<: *achievement-bonus-4
+    base: Scientist
+    previous: Master Scientist
+    quantity: 20
+    directions: Workshop 20 different items.
 
   # Legendary Scientist:
   #   <<: *scientist
@@ -692,6 +705,7 @@ achievements:
     <<: *explorer
     <<: *achievement-bonus-2
     base: Explorer
+    previous: Explorer
     quantity: 500
     directions: Discover 500 unexplored areas.
 
@@ -710,6 +724,7 @@ achievements:
     <<: *pest-control
     <<: *achievement-bonus-2
     base: Pest Control
+    previous: Pest Control
     quantity: 100
     directions: Plug 100 monster maws or pipes.
 
@@ -726,6 +741,7 @@ achievements:
     <<: *raider
     <<: *achievement-bonus-2
     base: Raider
+    previous: Raider
     directions: Raid 50 dungeons.
     quantity: 50
 
@@ -741,6 +757,7 @@ achievements:
     <<: *looter
     <<: *achievement-bonus-2
     base: Looter
+    previous: Looter
     quantity: 250
     directions: Loot 250 chests, crates, or sacks.
 
@@ -758,6 +775,7 @@ achievements:
     <<: *killer
     <<: *achievement-bonus-2
     base: Killer
+    previous: Killer
     quantity: 250
     directions: Kill 250 different players in PvP.
 
@@ -774,6 +792,7 @@ achievements:
     <<: *casualty
     <<: *achievement-bonus-2
     base: Casualty
+    previous: Casualty
     quantity: 250
     directions: Get killed by 250 different players in PvP.
 
@@ -790,6 +809,7 @@ achievements:
     <<: *merchant
     <<: *achievement-bonus-2
     base: Merchant
+    previous: Merchant
     directions: Trade with 250 different players.
     quantity: 250
 
@@ -817,6 +837,7 @@ achievements:
     <<: *trapper
     <<: *achievement-bonus-2
     base: Trapper
+    previous: Trapper
     quantity: 100
     directions: Find and trap 100 animals.
 
@@ -833,6 +854,7 @@ achievements:
     <<: *appraiser
     <<: *achievement-bonus-2
     base: Appraiser
+    previous: Appraiser
     quantity: 100
     directions: Vote on 100 different landmarks.
 
@@ -849,6 +871,7 @@ achievements:
     <<: *architect
     <<: *achievement-bonus-3
     base: Architect
+    previous: Architect
     quantity: 500
     directions: Build landmarks and get 500 votes.
 
