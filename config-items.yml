@@ -5414,7 +5414,7 @@ items:
       - name: furniture/fireplace-active
         inherit: true
         sprite animation: ['furniture/fireplace-flame', 3]
-        sound_loop: fire_woodstove01_15
+        sound loop: fire_woodstove01_15
         light: 6
   furniture/fireplace-large:
     <<: *furniture-fiery
@@ -5430,7 +5430,7 @@ items:
       - name: furniture/fireplace-large-active
         inherit: true
         sprite animation: ['furniture/fireplace-large-flame', 3]
-        sound_loop: fire_woodstove01_15
+        sound loop: fire_woodstove01_15
         light: 8
   furniture/brazier:
     <<: *furniture-fiery
@@ -5444,7 +5444,7 @@ items:
       - name: furniture/brazier-active
         inherit: true
         sprite animation: ['furniture/brazier-flame', 3]
-        sound_loop: fire_woodstove01_15
+        sound loop: fire_woodstove01_15
         light: 5
 
   furniture/grandfather-clock:
@@ -6365,7 +6365,7 @@ items:
         light: 5.0
         light_color: ffffff
         inherit: true
-        sound_loop: spooky07
+        sound loop: spooky07
       - name: containers/pandora-expired
         sprite: containers/pandora-box-open
         inherit: true
@@ -6446,7 +6446,7 @@ items:
     change:
       - name: music/phonograph-static
         inherit: true
-        sound_loop: record_needle_static_loop_06
+        sound loop: record_needle_static_loop_06
 
   music/symphonium:
     <<: *music
@@ -7300,7 +7300,7 @@ items:
     change:
       - name: mechanical/collector-active
         inherit: true
-        sound_loop: generator_hum03
+        sound loop: generator_hum03
   mechanical/tesla-coil:
     <<: *steam-powered
     code: 999
@@ -7315,7 +7315,7 @@ items:
         sprite animation: ['mechanical/tesla-coil-electric', 3]
         light: 3
         light_color: ff88ff
-        sound_loop: forboding
+        sound loop: forboding
   mechanical/suppressor:
     <<: *steam-powered
     code: 908
@@ -7336,7 +7336,7 @@ items:
         sprite: mechanical/suppressor-overlay
         sprite-color: '00ff00'
         inherit: true
-        sound_loop: deflectorhum
+        sound loop: deflectorhum
   mechanical/replenisher:
     <<: *steam-powered
     crafting_helper: true
@@ -7370,7 +7370,7 @@ items:
     change:
       - name: mechanical/wine-press-active
         inherit: true
-        sound_loop: squishy
+        sound loop: squishy
   mechanical/engine:
     <<: *steam-powered
     code: 851
@@ -7381,7 +7381,7 @@ items:
     change:
       - name: mechanical/engine-active
         inherit: true
-        sound_loop: old_compressor
+        sound loop: old_compressor
   mechanical/furnace:
     <<: *steam-powered
     code: 850
@@ -7410,7 +7410,7 @@ items:
         glow: 1
         light: 1
         light_color: e9814b
-        sound_loop: fire_furnace02
+        sound loop: fire_furnace02
   mechanical/exploder:
     <<: *steam-powered
     code: 974
@@ -7446,7 +7446,7 @@ items:
       - name: mechanical/mill-active
         background: mechanical/mill
         sprite animation: ['mechanical/mill-anim', 2]
-        sound_loop: old_compressor
+        sound loop: old_compressor
 
   mechanical/lathe:
     <<: *steam-powered
@@ -7459,7 +7459,7 @@ items:
       - name: mechanical/lathe-active
         background: mechanical/lathe
         sprite animation: ['mechanical/lathe-anim', 2]
-        sound_loop: old_compressor
+        sound loop: old_compressor
 
   mechanical/loom:
     <<: *steam-powered
@@ -7472,7 +7472,7 @@ items:
       - name: mechanical/loom-active
         background: mechanical/loom
         sprite animation: ['mechanical/loom-anim', 2]
-        sound_loop: old_compressor
+        sound loop: old_compressor
 
   mechanical/magnet-large:
     <<: *steam-powered
@@ -7485,7 +7485,7 @@ items:
     crafting_helper: true
     change:
       - name: mechanical/magnet-active
-        sound_loop: deflectorhum
+        sound loop: deflectorhum
         sprite: mechanical/magnet-trap-large
 
   mechanical/bomb-suppressor:
@@ -7500,7 +7500,7 @@ items:
     mod: change
     change:
       - inherit: true
-        sound_loop: deflectorhum
+        sound loop: deflectorhum
 
   mechanical/thinking-cap:
     <<: *mechanical
@@ -7645,7 +7645,7 @@ items:
     inventory: ''
     mining skill: ['engineering', 3]
     hint: '@dish-broken'
-    sound_loop: cricketpulse
+    sound loop: cricketpulse
     sound_loop_volume: 0.5
     xp: 5
     use:
@@ -7885,7 +7885,7 @@ items:
     custom_place: true
     inventory: ''
     karma: -5
-    sound_loop: razorwire
+    sound loop: razorwire
     group: enemy_protector
     use:
       guard: true
@@ -8662,7 +8662,7 @@ items:
     change:
       - name: mechanical/geck-tub-active
         inherit: true
-        sound_loop: centrifugal_rotor_idle_v01_10
+        sound loop: centrifugal_rotor_idle_v01_10
 
   mechanical/geck-tank-base:
     <<: *geck
@@ -8705,7 +8705,7 @@ items:
     change:
       - name: mechanical/composter-chamber-active
         inherit: true
-        sound_loop: centrifugal_rotor_idle_v01_10
+        sound loop: centrifugal_rotor_idle_v01_10
 
   mechanical/composter-cover:
     <<: *composter
@@ -8747,7 +8747,7 @@ items:
     change:
       - name: mechanical/recycler-chamber-active
         inherit: true
-        sound_loop: centrifugal_rotor_idle_v01_10
+        sound loop: centrifugal_rotor_idle_v01_10
 
   mechanical/recycler-tubes:
     <<: *recycler
@@ -9170,7 +9170,7 @@ items:
     change:
       - name: hell/expiator-face-active
         inherit: true
-        sound_loop: sleestack
+        sound loop: sleestack
 
   hell/expiator-pipe:
     <<: *expiator
@@ -9543,7 +9543,7 @@ items:
     spacing: 50
     karma: -10
     hint: "Click on teleporters to quickly travel throughout the world. Inactive teleporters can be repaired with a click, progressing you towards a Teleporter Repairman achievement and unlocking the teleporter for use by players."
-    ##sound_loop: wobble_02
+    ##sound loop: wobble_02
     sound_loop_volume: 0.7
     change:
       - name: mechanical/teleporter-active
@@ -9666,7 +9666,7 @@ items:
     sprite animation color: ffa100
     ownership: true
     karma: -20
-    #sound_loop: wobble_02
+    #sound loop: wobble_02
     sound_loop_volume: 0.85
     use:
       zone teleport: true
@@ -9693,7 +9693,7 @@ items:
     sprite animation color: '111111'
     title: One-Way Teleporter
     karma: -10
-    #sound_loop: wobble_02
+    #sound loop: wobble_02
     use:
       command: true
       target teleport: true
@@ -9717,7 +9717,7 @@ items:
     sprite animation color: '111111'
     title: One-Way World Teleporter
     karma: -20
-    #sound_loop: wobble_02
+    #sound loop: wobble_02
     use:
       command: true
       target teleport: true
@@ -9745,7 +9745,7 @@ items:
     background: mechanical/zone-teleporter
     sprite animation: ['mechanical/zone-teleporter-glow', 2]
     sprite animation color: 'ffa100'
-    #sound_loop: wobble_02
+    #sound loop: wobble_02
     use:
       command: true
       spawn teleport: true
@@ -10593,7 +10593,7 @@ items:
   tools/gun-type-steam: &tools-gun-type-steam
     ammo cost: 0.06
     damage range: 12
-    sound_loop: steam
+    sound loop: steam
 
   tools/gun-steam-pistol:
     <<: *tools-gun
@@ -10721,7 +10721,7 @@ items:
   tools/gun-type-flame: &tools-gun-type-flame
     ammo cost: 0.1
     damage range: 12
-    sound_loop: flame
+    sound loop: flame
 
   tools/gun-flame-pistol:
     <<: *tools-gun
@@ -10801,7 +10801,7 @@ items:
   tools/gun-type-frost: &tools-gun-type-frost
     ammo cost: 0.1
     damage range: 12
-    sound_loop: steam
+    sound loop: steam
 
   tools/gun-frost-pistol:
     <<: *tools-gun
@@ -10880,7 +10880,7 @@ items:
   tools/gun-type-energy: &tools-gun-type-energy
     ammo cost: 0.1
     damage range: 14
-    sound_loop: electricity
+    sound loop: electricity
 
   tools/gun-energy-pistol:
     <<: *tools-gun

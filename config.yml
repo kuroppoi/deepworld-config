@@ -147,7 +147,7 @@ item_key_map:
   power: power
   crafting_helpers: crafting_helpers
   crafting_events: crafting_events
-  sound_loop: sound_loop
+  sound_loop: sound loop
   sound_loop_volume: sound_loop_volume
   guard: guard
   xp: xp
