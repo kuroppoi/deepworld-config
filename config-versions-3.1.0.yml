@@ -3,7 +3,7 @@
     keys:
       interaction:
         Interact: Space
-        Shield: X
+        Shield: Mouse1
         Show Protector Overlay: Comma
         Zoom In: Equals
         Zoom Out: Minus
