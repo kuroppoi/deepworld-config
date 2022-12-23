@@ -2480,6 +2480,7 @@ items:
   building/bloodstone-column:
     code: 639
     material: stone
+    size: [2, 2]
     ingredients: [['ground/bloodstone-ore', 2]]
     crafting skill: ['building', 3]
     toughness: 2
@@ -2499,6 +2500,7 @@ items:
   building/marble-column:
     code: 618
     material: stone
+    size: [2, 2]
     ingredients: [['ground/marble-ore', 2]]
     crafting skill: ['building', 3]
     toughness: 2
@@ -2604,6 +2606,7 @@ items:
     <<: *mirrorable
     code: 622
     shape: polygonal
+    size: [2, 3]
     ingredients: [['building/wood', 4], ['building/pitch', 2]]
     crafting skill: ['building', 2]
     karma: -1
@@ -2632,6 +2635,7 @@ items:
     <<: *mirrorable
     code: 625
     shape: polygonal
+    size: [2, 3]
     ingredients: [['building/wood', 4], ['building/pitch', 2]]
     crafting skill: ['building', 2]
     title: Large Brown Roof Edge
@@ -2662,6 +2666,7 @@ items:
     <<: *mirrorable
     code: 633
     shape: polygonal
+    size: [2, 3]
     ingredients: [['ground/clay', 3], ['building/pitch', 2]]
     crafting skill: ['building', 3]
     carryable: false
@@ -2692,6 +2697,7 @@ items:
     <<: *mirrorable
     code: 52
     shape: polygonal
+    size: [2, 3]
     shape_definition: building/roof-edge-large
     ingredients: [['building/brass', 3], ['building/pitch', 2]]
     crafting skill: ['building', 4]
@@ -3165,6 +3171,7 @@ items:
   building/staircase:
     code: 655
     tileable: false
+    size: [2, 4]
     use:
       climb: true
     material: metal
@@ -3971,6 +3978,7 @@ items:
     code: 940
     char: ⩚
     shape: polygonal
+    size: [2, 1]
     gui: true
   rubble/stone-pile-2:
     <<: *rubble-stone
@@ -4002,11 +4010,13 @@ items:
     <<: *rubble-stone
     code: 946
     shape: polygonal
+    size: [2, 1]
     carryable: false
   rubble/stone-pile-8:
     <<: *rubble-stone
     code: 947
     shape: polygonal
+    size: [2, 1]
     carryable: false
 
   rubble/wood: &rubble-wood
@@ -4047,6 +4057,7 @@ items:
     <<: *rubble-wood
     carryable: false
     code: 958
+    size: [1, 2]
   rubble/wood-6:
     <<: *rubble-wood
     carryable: false
@@ -4152,31 +4163,37 @@ items:
     <<: *rubble-metal
     carryable: false
     code: 984
+    size: [1, 2]
     char: ✵
   rubble/scrap-metal-6:
     <<: *rubble-metal
     carryable: false
     code: 985
+    size: [1, 2]
     char: ✶
   rubble/scrap-metal-7:
     <<: *rubble-metal
     carryable: false
     code: 986
+    size: [2, 1]
     char: ✷
   rubble/scrap-metal-8:
     <<: *rubble-metal
     carryable: false
     code: 987
+    size: [2, 1]
     char: ✸
   rubble/scrap-metal-9:
     <<: *rubble-metal
     carryable: false
     code: 988
+    size: [2, 1]
     char: ✹
   rubble/scrap-metal-10:
     <<: *rubble-metal
     carryable: false
     code: 989
+    size: [2, 1]
     char: ✺
 
 
@@ -4930,7 +4947,7 @@ items:
     title: Candelabra
   lighting/chandelier:
     code: 1008
-    size: [2, 2]
+    size: [3, 2]
     color: eeeedd
     material: metal
     background: lighting/chandelier
@@ -9351,34 +9368,42 @@ items:
     <<: *ice-sculpture
     code: 374
     title: Android Ice Sculpture
+    size: [1, 2]
   arctic/ice-sculpture-carriage:
     <<: *ice-sculpture
     code: 375
     title: Carriage Ice Sculpture
+    size: [2, 2]
   arctic/ice-sculpture-dragon:
     <<: *ice-sculpture
     code: 376
     title: Dragon Ice Sculpture
+    size: [3, 2]
   arctic/ice-sculpture-eiffel-tower:
     <<: *ice-sculpture
     code: 377
     title: Eiffel Tower Ice Sculpture
+    size: [1, 2]
   arctic/ice-sculpture-penguin:
     <<: *ice-sculpture
     code: 378
     title: Penguin Ice Sculpture
+    size: [1, 2]
   arctic/ice-sculpture-seahorse:
     <<: *ice-sculpture
     code: 379
     title: Seahorse Ice Sculpture
+    size: [1, 2]
   arctic/ice-sculpture-liberty:
     <<: *ice-sculpture
     code: 380
     title: Liberty Ice Sculpture
+    size: [1, 2]
   arctic/ice-sculpture-swan:
     <<: *ice-sculpture
     code: 381
     title: Swan Ice Sculpture
+    size: [1, 2]
 
 
   # ===== BRAIN ===== #
@@ -9476,18 +9501,23 @@ items:
   desert/cactus-mid-left-large:
     <<: *desert-cactus
     code: 429
+    size: [2, 2]
   desert/cactus-mid-left-small:
     <<: *desert-cactus
     code: 430
+    size: [2, 1]
   desert/cactus-mid-right-large:
     <<: *desert-cactus
     code: 431
+    size: [2, 2]
   desert/cactus-mid-right-left:
     <<: *desert-cactus
     code: 432
+    size: [3, 2]
   desert/cactus-mid-right-small:
     <<: *desert-cactus
     code: 433
+    size: [2 ,1]
 
 
 
@@ -13968,6 +13998,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-brass
+    size: [2, 2]
 
   blueprint-small-diamond: &blueprint-small-diamond
     <<: *blueprint
@@ -13992,6 +14023,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-diamond
+    size: [2, 2]
 
   blueprint-small-onyx: &blueprint-small-onyx
     <<: *blueprint
@@ -14016,6 +14048,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-onyx
+    size: [2, 2]
 
   blueprint-large-brass: &blueprint-large-brass
     <<: *furniture-art
@@ -14040,6 +14073,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-brass
+    size: [3, 3]
 
   blueprint-large-diamond: &blueprint-large-diamond
     <<: *furniture-art
@@ -14064,6 +14098,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-diamond
+    size: [3, 3]
 
   blueprint-large-onyx: &blueprint-large-onyx
     <<: *furniture-art
@@ -14088,6 +14123,7 @@ items:
     karma: -10
     gui: false
     inventory_frame: inventory/furniture/blueprint-onyx
+    size: [3, 3]
 
   furniture/blueprint-boot-brass:
     <<: *blueprint-small-brass
