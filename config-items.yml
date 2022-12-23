@@ -7648,6 +7648,8 @@ items:
     sound_loop: cricketpulse
     sound_loop_volume: 0.5
     xp: 5
+    use:
+      field_display: true
 
   mechanical/dish-competition: &dish-competition
     <<: *mechanical
