@@ -68,6 +68,7 @@ items:
     invulnerable: true
     placeover: true
     char: ' '
+    inventory sprite: inventory/nothing
     hintt: 'A friendly combination of oyxgen and other elements that helps one avoid death.'
 
   ################
@@ -9494,32 +9495,40 @@ items:
   desert/cactus-base:
     <<: *desert-cactus
     code: 426
+    inventory: inventory/cactus-small
   desert/cactus-mid:
     <<: *desert-cactus
     code: 427
+    inventory: inventory/cactus-small
   desert/cactus-top:
     <<: *desert-cactus
     code: 428
+    inventory: inventory/cactus-small
   desert/cactus-mid-left-large:
     <<: *desert-cactus
     code: 429
     size: [2, 2]
+    inventory: inventory/cactus-small
   desert/cactus-mid-left-small:
     <<: *desert-cactus
     code: 430
     size: [2, 1]
+    inventory: inventory/cactus-small
   desert/cactus-mid-right-large:
     <<: *desert-cactus
     code: 431
     size: [2, 2]
+    inventory: inventory/cactus-small
   desert/cactus-mid-right-left:
     <<: *desert-cactus
     code: 432
     size: [3, 2]
+    inventory: inventory/cactus-small
   desert/cactus-mid-right-small:
     <<: *desert-cactus
     code: 433
     size: [2 ,1]
+    inventory: inventory/cactus-small
 
 
 
