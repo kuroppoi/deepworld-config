@@ -1729,7 +1729,7 @@ items:
       tool: pickaxe
       accessory: dowsing
       notification: Rich vein!
-    light: 0.15
+    light: 2
     light_color: f2f2ff
     rarity: 4
   ground/platinum:
@@ -1745,7 +1745,7 @@ items:
       tool: pickaxe
       accessory: dowsing
       notification: Rich vein!
-    light: 0.15
+    light: 2
     light_color: f2f2ff
     rarity: 4
   ground/beryllium:
@@ -1815,7 +1815,7 @@ items:
     code: 568
     sprite: ['ground/diamond-ore', 3]
     stealable: false
-    light: 0.15
+    light: 1
     light_color: f2f2ff
     rarity: 4
     karma: -10
@@ -1829,7 +1829,7 @@ items:
     code: 59
     sprite: ['ground/platinum-ore', 3]
     stealable: false
-    light: 0.15
+    light: 1
     light_color: f2f2ff
     rarity: 4
     karma: -10
