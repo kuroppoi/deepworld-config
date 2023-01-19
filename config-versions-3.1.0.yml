@@ -847,6 +847,11 @@
       border-wholeness: earth
       color: 715a35
       sprite_z: -0.1
+      sprites:
+        - frames: base/earth
+          tileable: true
+        - frames: base/steam-vent-cap
+          type: continuity
 
     base/drawing: &base-drawing
       <<: *base-earth
