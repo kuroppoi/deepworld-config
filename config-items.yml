@@ -9471,21 +9471,25 @@ items:
     code: 440
     sprite: ['desert/rock-small', 9]
     inventory: ground/stone
+    size: [1, 1]
 
   desert/rock-tall:
     code: 441
     sprite: ['desert/rock-tall', 2]
     inventory: ground/stone
+    size: [1, 2]
 
   desert/rock-wide:
     code: 442
     sprite: ['desert/rock-wide', 4]
     inventory: ground/stone
+    size: [2, 1]
 
   desert/rock-large:
     code: 443
     sprite: ['desert/rock-large', 2]
     inventory: ground/stone
+    size: [2, 2]
 
   desert/cactus: &desert-cactus
     gui: false
