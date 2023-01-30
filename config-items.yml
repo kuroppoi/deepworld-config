@@ -10094,7 +10094,7 @@ items:
     powerV3: 0.4
     bonus: 0.25
     life: 20
-    damage: ['piercing', 0.5]
+    damage: ['piercing', 0.125]
     auto_equip: true
     ingredients: ['building/wood', 'rubble/iron']
     karma: -2
@@ -10109,7 +10109,7 @@ items:
     bonus: 0.5
     life: 50
     title: Fine Pickaxe
-    damage: ['piercing', 0.7]
+    damage: ['piercing', 0.175]
     critical_hit: 0.005
     ingredients: ['building/wood', 'building/iron', 'ground/resin']
     crafting skill: ['building', 2]
@@ -10124,7 +10124,7 @@ items:
     bonus: 0.75
     life: 100
     title: Diamond Pickaxe
-    damage: ['piercing', 0.9]
+    damage: ['piercing', 0.225]
     critical_hit: 0.0075
     emitter: diamond sparkles
     ingredients: [['ground/diamond-ore', 4], ['building/brass', 2], ['ground/resin', 2]]
@@ -10141,7 +10141,7 @@ items:
     bonus: 1.0
     life: 200
     title: Onyx Pickaxe
-    damage: ['piercing', 1.1]
+    damage: ['piercing', 0.275]
     critical_hit: 0.01
     emitter: onyx sparkles
     ingredients: [['ground/onyx', 3], ['building/brass', 2], ['ground/resin', 2]]
@@ -10161,7 +10161,7 @@ items:
     <<: *melee
     code: 1028
     action: melee
-    damage: ['bludgeoning', 0.8]
+    damage: ['bludgeoning', 0.2]
     critical_hit: 0.01
     ingredients: ['building/wood', ['rubble/iron', 2]]
     karma: -2
@@ -10172,7 +10172,7 @@ items:
     code: 1029
     action: melee
     title: Fine Sledgehammer
-    damage: ['bludgeoning', 1.0]
+    damage: ['bludgeoning', 0.25]
     critical_hit: 0.02
     ingredients: ['building/wood', ['building/iron', 2], 'ground/resin']
     crafting skill: ['building', 2]
@@ -10183,7 +10183,7 @@ items:
     code: 1043
     action: melee
     title: Diamond Sledgehammer
-    damage: ['bludgeoning', 1.2]
+    damage: ['bludgeoning', 0.3]
     critical_hit: 0.03
     ingredients: [['ground/diamond-ore', 4], ['building/iron', 2], ['ground/resin', 2]]
     crafting skill: ['building', 4]
@@ -10195,7 +10195,7 @@ items:
     code: 1044
     action: melee
     title: Onyx Sledgehammer
-    damage: ['bludgeoning', 1.4]
+    damage: ['bludgeoning', 0.35]
     critical_hit: 0.04
     ingredients: [['ground/onyx', 3], ['building/iron', 2], ['ground/resin', 2]]
     crafting skill: ['building', 6]
@@ -10219,7 +10219,7 @@ items:
     power: 1.2
     powerV3: 0.2
     life: 30
-    damage: ['bludgeoning', 0.5]
+    damage: ['bludgeoning', 0.125]
     auto_equip: true
     ingredients: ['building/wood', ['building/iron', 2]]
     karma: -2
@@ -10232,7 +10232,7 @@ items:
     power: 1.7
     powerV3: 0.4
     life: 30
-    damage: ['bludgeoning', 0.6]
+    damage: ['bludgeoning', 0.15]
     title: Diamond Shovel
     ingredients: [['ground/diamond-ore', 4], ['building/brass', 2], ['building/iron', 2]]
     crafting skill: ['building', 4]
@@ -10246,7 +10246,7 @@ items:
     power: 2.2
     powerV3: 0.5
     life: 30
-    damage: ['bludgeoning', 0.7]
+    damage: ['bludgeoning', 0.175]
     title: Onyx Shovel
     ingredients: [['ground/onyx', 3], ['building/brass', 2], ['building/iron', 2]]
     crafting skill: ['building', 6]
@@ -10268,7 +10268,7 @@ items:
     action: melee
     glow: 0.7
     glow_sprite: tools/tesla-club-glow
-    damage: ['energy', 1.5]
+    damage: ['energy', 0.375]
     critical_hit: 0.025
     ingredients: [['building/brass', 2], ['building/iron', 2], ['ground/quartz-ore', 5], 'ground/crystal-red-1', 'accessories/schematic']
     crafting skill: ['engineering', 5]
@@ -10280,7 +10280,7 @@ items:
     code: 1023
     action: smash
     power: 1.2
-    damage: ['slashing', 0.6]
+    damage: ['slashing', 0.15]
     ingredients: ['building/wood', ['building/iron', 2]]
     crafting skill: ['building', 2]
     group: hatchet
@@ -10290,7 +10290,7 @@ items:
     action: smash
     power: 1.7
     title: Diamond Hatchet
-    damage: ['slashing', 0.8]
+    damage: ['slashing', 0.2]
     ingredients: [['ground/diamond-ore', 3], ['building/brass', 2], ['building/iron', 2]]
     crafting skill: ['building', 4]
     group: hatchet
@@ -10300,7 +10300,7 @@ items:
     code: 371
     action: smash
     power: 2.2
-    damage: ['slashing', 1.0]
+    damage: ['slashing', 0.25]
     title: Onyx Hatchet
     ingredients: [['ground/onyx', 2], ['building/brass', 2], ['building/iron', 2]]
     crafting skill: ['building', 6]
@@ -10319,13 +10319,13 @@ items:
     <<: *melee
     code: 1009
     action: melee
-    damage: ['bludgeoning', 0.3]
+    damage: ['bludgeoning', 0.075]
     hintt: "A weak melee tool, the net can be used to catch butterflies and insects and effectively turn them into pleasant wall decorations."
   tools/net-diamond:
     <<: *melee
     code: 368
     action: melee
-    damage: ['bludgeoning', 0.5]
+    damage: ['bludgeoning', 0.125]
     title: Diamond Net
     rarity: 3
     ingredients: [['ground/diamond-ore', 3], ['building/iron', 2], ['tools/net', 2]]
@@ -10334,7 +10334,7 @@ items:
     <<: *melee
     code: 369
     action: melee
-    damage: ['bludgeoning', 0.7]
+    damage: ['bludgeoning', 0.175]
     title: Onyx Net
     rarity: 4
     ingredients: [['ground/onyx', 2], ['building/iron', 2], ['tools/net', 4]]
@@ -10352,14 +10352,14 @@ items:
     <<: *melee
     code: 365
     action: melee
-    damage: ['bludgeoning', 0.3]
+    damage: ['bludgeoning', 0.075]
     ingredients: [['building/wood', 5], ['building/brass', 1]]
     crafting skill: ['building', 2]
   tools/cane-diamond:
     <<: *melee
     code: 366
     action: melee
-    damage: ['bludgeoning', 0.5]
+    damage: ['bludgeoning', 0.125]
     rarity: 3
     ingredients: [['ground/diamond-ore', 5], ['building/wood', 5]]
     crafting skill: ['building', 4]
@@ -10368,7 +10368,7 @@ items:
     <<: *melee
     code: 367
     action: melee
-    damage: ['bludgeoning', 0.7]
+    damage: ['bludgeoning', 0.175]
     rarity: 4
     ingredients: [['ground/onyx', 4], ['building/wood', 5]]
     crafting skill: ['building', 6]
@@ -10390,7 +10390,7 @@ items:
     power: 0.6
     powerV3: 0.2
     bonus: 0.5
-    damage: ['piercing', 0.3]
+    damage: ['piercing', 0.075]
     ingredients: [['building/iron', 2], ['building/wood', 2]]
     crafting skill: ['building', 3]
     hintt: "The spade is a slow mining tool that allows you to occasionally recoup bulbs when mining grown flowers. Use better spades and increase your Horticulture skill to improve your chances of recouping!"
@@ -10402,7 +10402,7 @@ items:
     power: 1.0
     powerV3: 0.4
     bonus: 0.75
-    damage: ['piercing', 0.5]
+    damage: ['piercing', 0.125]
     ingredients: [['ground/diamond-ore', 3], ['building/iron', 2]]
     crafting skill: ['building', 5]
     title: Diamond Spade
@@ -10414,7 +10414,7 @@ items:
     power: 1.5
     powerV3: 0.5
     bonus: 1.0
-    damage: ['piercing', 0.7]
+    damage: ['piercing', 0.175]
     ingredients: [['ground/onyx', 2], ['building/iron', 2]]
     crafting skill: ['building', 7]
     title: Onyx Spade
@@ -10431,14 +10431,14 @@ items:
     <<: *melee
     code: 237
     action: melee
-    damage: ['slashing', 1.0]
+    damage: ['slashing', 0.25]
     ingredients: [['building/iron', 8], ['building/wood', 2]]
     crafting skill: ['building', 4]
   tools/rapier-diamond:
     <<: *melee
     code: 238
     action: melee
-    damage: ['slashing', 1.2]
+    damage: ['slashing', 0.3]
     ingredients: [['ground/diamond-ore', 4], ['building/iron', 5], ['building/brass', 3]]
     crafting skill: ['building', 6]
     title: Diamond Rapier
@@ -10446,7 +10446,7 @@ items:
     <<: *melee
     code: 239
     action: melee
-    damage: ['slashing', 1.4]
+    damage: ['slashing', 0.35]
     ingredients: [['ground/onyx', 3], ['building/iron', 5], ['building/brass', 3]]
     crafting skill: ['building', 8]
     title: Onyx Rapier
@@ -10489,7 +10489,7 @@ items:
     <<: *tools-gun-type-bullets
     code: 1033
     title: Pistol
-    damage: ['piercing', 0.7]
+    damage: ['piercing', 0.175]
     spawn: bullets/lead
     rate: 2
     speed: 14
@@ -10508,7 +10508,7 @@ items:
     code: 1114
     title: Pistol Mark II
     spawn: bullets/lead-mk2
-    damage: ['piercing', 0.875]
+    damage: ['piercing', 0.21875]
     rate: 3
     speed: 15
     shoot emitter: steam puff burst strong
@@ -10520,7 +10520,7 @@ items:
     code: 1115
     title: Pistol Mark III
     spawn: bullets/lead-mk3
-    damage: ['piercing', 1.05]
+    damage: ['piercing', 0.2625]
     rate: 4
     speed: 16
     shoot emitter: steam puff burst stronger
@@ -10532,7 +10532,7 @@ items:
     <<: *tools-gun-type-bullets
     code: 1034
     title: Musket
-    damage: ['piercing', 0.8]
+    damage: ['piercing', 0.2]
     spawn: bullets/lead
     rate: 3
     speed: 16
@@ -10546,7 +10546,7 @@ items:
     <<: *tools-gun-type-bullets
     code: 1116
     title: Musket Mark II
-    damage: ['piercing', 1.0]
+    damage: ['piercing', 0.25]
     spawn: bullets/lead-mk2
     rate: 4
     speed: 17
@@ -10557,7 +10557,7 @@ items:
     <<: *tools-gun-type-bullets
     code: 1117
     title: Musket Mark III
-    damage: ['piercing', 1.2]
+    damage: ['piercing', 0.3]
     spawn: bullets/lead-mk3
     rate: 5
     speed: 18
@@ -10605,7 +10605,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 356
     title: Steam Pistol
-    damage: ['fire', 0.6]
+    damage: ['fire', 0.15]
     spawn: bullets/steam
     speed: 7
     muzzle: tools/muzzle-flash-gun-steam
@@ -10618,7 +10618,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 357
     title: Steam Pistol Mark II
-    damage: ['fire', 0.75]
+    damage: ['fire', 0.1875]
     spawn: bullets/steam-mk2
     speed: 8
     shoot emitter: steam puff strong
@@ -10629,7 +10629,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 358
     title: Steam Pistol Mark III
-    damage: ['fire', 0.9]
+    damage: ['fire', 0.225]
     spawn: bullets/steam-mk3
     speed: 9
     shoot emitter: steam puff stronger
@@ -10641,7 +10641,7 @@ items:
     <<: *tools-gun-type-steam
     code: 1030
     title: Steam Cannon
-    damage: ['fire', 0.9]
+    damage: ['fire', 0.225]
     spawn: bullets/steam
     rate: 30
     speed: 7
@@ -10654,7 +10654,7 @@ items:
     <<: *tools-gun-type-steam
     code: 1108
     title: Steam Cannon Mark II
-    damage: ['fire', 1.125]
+    damage: ['fire', 0.28125]
     spawn: bullets/steam-mk2
     rate: 30
     speed: 8
@@ -10665,7 +10665,7 @@ items:
     <<: *tools-gun-type-steam
     code: 1109
     title: Steam Cannon Mark III
-    damage: ['fire', 1.35]
+    damage: ['fire', 0.3375]
     spawn: bullets/steam-mk3
     rate: 30
     speed: 9
@@ -10682,7 +10682,7 @@ items:
     <<: *tools-gun
     code: 1031
     title: Acid Cannon
-    damage: ['acid', 1.2]
+    damage: ['acid', 0.3]
     damage range: 12
     spawn: bullets/acid
     rate: 3
@@ -10697,7 +10697,7 @@ items:
     <<: *tools-gun-mk2
     code: 1110
     title: Acid Cannon Mark II
-    damage: ['acid', 1.5]
+    damage: ['acid', 0.375]
     damage range: 13
     spawn: bullets/acid-mk2
     rate: 4
@@ -10710,7 +10710,7 @@ items:
     <<: *tools-gun-mk3
     code: 1111
     title: Acid Cannon Mark III
-    damage: ['acid', 1.8]
+    damage: ['acid', 0.45]
     damage range: 14
     spawn: bullets/acid-mk3
     rate: 5
@@ -10733,7 +10733,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 359
     title: Flame Pistol
-    damage: ['fire', 1.0]
+    damage: ['fire', 0.25]
     spawn: bullets/flame
     speed: 9
     muzzle: tools/muzzle-flash-gun-flame-pistol
@@ -10746,7 +10746,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 360
     title: Flame Pistol Mark II
-    damage: ['fire', 1.25]
+    damage: ['fire', 0.3125]
     spawn: bullets/flame-mk2
     speed: 10
     muzzle: tools/muzzle-flash-gun-flame-pistol
@@ -10757,7 +10757,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 361
     title: Flame Pistol Mark III
-    damage: ['fire', 1.5]
+    damage: ['fire', 0.375]
     spawn: bullets/flame-mk3
     speed: 11
     muzzle: tools/muzzle-flash-gun-flame-pistol
@@ -10769,7 +10769,7 @@ items:
     <<: *tools-gun-type-flame
     code: 1032
     title: Flamethrower
-    damage: ['fire', 1.5]
+    damage: ['fire', 0.375]
     spawn: bullets/flame
     rate: 30
     speed: 9
@@ -10782,7 +10782,7 @@ items:
     <<: *tools-gun-type-flame
     code: 1112
     title: Flamethrower Mark II
-    damage: ['fire', 1.875]
+    damage: ['fire', 0.46875]
     spawn: bullets/flame-mk2
     rate: 30
     speed: 10
@@ -10793,7 +10793,7 @@ items:
     <<: *tools-gun-type-flame
     code: 1113
     title: Flamethrower Mark III
-    damage: ['fire', 2.25]
+    damage: ['fire', 0.5625]
     spawn: bullets/flame-mk3
     rate: 30
     speed: 11
@@ -10813,7 +10813,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 362
     title: Frost Pistol
-    damage: ['cold', 1.0]
+    damage: ['cold', 0.25]
     spawn: bullets/frost
     speed: 9
     muzzle: tools/muzzle-flash-gun-frost-pistol
@@ -10826,7 +10826,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 363
     title: Frost Pistol Mark II
-    damage: ['cold', 1.25]
+    damage: ['cold', 0.3125]
     spawn: bullets/frost-mk2
     speed: 10
     muzzle: tools/muzzle-flash-gun-frost-pistol
@@ -10837,7 +10837,7 @@ items:
     <<: *tools-gun-fancy-pistol
     code: 364
     title: Frost Pistol Mark III
-    damage: ['cold', 1.5]
+    damage: ['cold', 0.375]
     spawn: bullets/frost-mk3
     speed: 11
     muzzle: tools/muzzle-flash-gun-frost-pistol
@@ -10848,7 +10848,7 @@ items:
     <<: *tools-gun-type-frost
     code: 1037
     title: Frost Cannon
-    damage: ['cold', 1.5]
+    damage: ['cold', 0.375]
     spawn: bullets/frost
     rate: 30
     speed: 9
@@ -10861,7 +10861,7 @@ items:
     <<: *tools-gun-type-frost
     code: 1118
     title: Frost Cannon Mark II
-    damage: ['cold', 1.875]
+    damage: ['cold', 0.46875]
     spawn: bullets/frost-mk2
     rate: 30
     speed: 10
@@ -10872,7 +10872,7 @@ items:
     <<: *tools-gun-type-frost
     code: 1119
     title: Frost Cannon Mark III
-    damage: ['cold', 2.25]
+    damage: ['cold', 0.5625]
     spawn: bullets/frost-mk3
     rate: 30
     speed: 11
@@ -10893,7 +10893,7 @@ items:
     code: 1042
     life: 50
     title: Energy Pistol
-    damage: ['energy', 0.9]
+    damage: ['energy', 0.225]
     spawn: bullets/energy
     speed: 12
     muzzle: tools/muzzle-flash-gun-energy-pistol
@@ -10905,7 +10905,7 @@ items:
     <<: *tools-gun-type-energy
     <<: *tools-gun-fancy-pistol
     code: 1019
-    damage: ['energy', 1.125]
+    damage: ['energy', 0.28125]
     spawn: bullets/energy-mk2
     speed: 15
     muzzle: tools/muzzle-flash-gun-energy-pistol
@@ -10916,7 +10916,7 @@ items:
     <<: *tools-gun-type-energy
     <<: *tools-gun-fancy-pistol
     code: 1020
-    damage: ['energy', 1.35]
+    damage: ['energy', 0.3375]
     spawn: bullets/energy-mk3
     speed: 16
     muzzle: tools/muzzle-flash-gun-energy-pistol
@@ -10928,7 +10928,7 @@ items:
     <<: *tools-gun-type-energy
     code: 1038
     title: Energy Cannon
-    damage: ['energy', 1.35]
+    damage: ['energy', 0.3375]
     spawn: bullets/energy
     rate: 20
     speed: 14
@@ -10941,7 +10941,7 @@ items:
     <<: *tools-gun-type-energy
     code: 1123
     title: Energy Cannon Mark II
-    damage: ['energy', 1.6875]
+    damage: ['energy', 0.421875]
     damage range: 14
     spawn: bullets/energy-mk2
     rate: 20
@@ -10953,7 +10953,7 @@ items:
     <<: *tools-gun-type-energy
     code: 1124
     title: Energy Cannon Mark III
-    damage: ['energy', 2.025]
+    damage: ['energy', 0.50625]
     spawn: bullets/energy-mk3
     rate: 20
     speed: 16
