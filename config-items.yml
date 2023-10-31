@@ -6521,7 +6521,7 @@ items:
   music/harp:
     <<: *music
     code: 251
-    side: [2, 2]
+    size: [2, 2]
   music/snare-drum:
     <<: *music
     code: 252
