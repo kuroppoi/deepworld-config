@@ -1143,6 +1143,7 @@ items:
       - frames: ground/petrified-wood-1
         type: modtile
     code: 522
+    tile_size: [2, 1]
 
   ground/petrified-wood-2:
     <<: *ground-earth-accent-wood
@@ -1151,6 +1152,7 @@ items:
       - frames: ground/petrified-wood-2
         type: modtile
     code: 523
+    tile_size: [2, 1]
 
   ground/petrified-wood-3:
     <<: *ground-earth-accent-wood
@@ -1159,6 +1161,7 @@ items:
       - frames: ground/petrified-wood-3
         type: modtile
     code: 524
+    tile_size: [2, 1]
 
   ground/petrified-wood-4:
     <<: *ground-earth-accent-wood
@@ -1167,6 +1170,7 @@ items:
       - frames: ground/petrified-wood-4
         type: modtile
     code: 525
+    tile_size: [2, 1]
 
   ground/petrified-wood-large-1:
     <<: *ground-earth-accent-wood
@@ -1175,6 +1179,7 @@ items:
       - frames: ground/petrified-wood-large-1
         type: modtile
     code: 526
+    tile_size: [4, 2]
 
   ground/petrified-wood-large-2:
     <<: *ground-earth-accent-wood
@@ -1183,6 +1188,7 @@ items:
       - frames: ground/petrified-wood-large-2
         type: modtile
     code: 527
+    tile_size: [4, 2]
 
   ground/earth-rock:
     <<: *ground-earth-accent-rock
@@ -1191,6 +1197,7 @@ items:
     sprites:
       - frames: ground/earth
       - frames: [ground/earth-rock, 9]
+    tile_size: [1, 1]
 
   ground/earth-rock-wide-1:
     <<: *ground-earth-accent-rock
@@ -1199,6 +1206,7 @@ items:
       - frames: ground/earth-rock-wide-1
         type: modtile
     code: 529
+    tile_size: [2, 1]
 
   ground/earth-rock-big-1:
     <<: *ground-earth-accent-rock
@@ -1208,6 +1216,7 @@ items:
         type: modtile
     code: 530
     sprite: [ground/earth-rock-big, 1]
+    tile_size: [2, 2]
 
   ground/earth-root-1:
     <<: *ground-earth-accent-root
@@ -1216,6 +1225,7 @@ items:
       - frames: ground/earth-root-1
         type: modtile
     code: 531
+    tile_size: [1, 1]
 
   ground/earth-root-wide-1:
     <<: *ground-earth-accent-root
@@ -1224,6 +1234,7 @@ items:
       - frames: ground/earth-root-wide-1
         type: modtile
     code: 532
+    tile_size: [2, 1]
 
   ground/earth-root-wide-2:
     <<: *ground-earth-accent-root
@@ -1232,6 +1243,7 @@ items:
       - frames: ground/earth-root-wide-2
         type: modtile
     code: 533
+    tile_size: [2, 1]
 
   ground/earth-root-wide-3:
     <<: *ground-earth-accent-root
@@ -1240,6 +1252,7 @@ items:
       - frames: ground/earth-root-wide-3
         type: modtile
     code: 534
+    tile_size: [2, 1]
 
   ground/earth-root-wide-4:
     <<: *ground-earth-accent-root
@@ -1248,6 +1261,7 @@ items:
       - frames: ground/earth-root-wide-4
         type: modtile
     code: 535
+    tile_size: [2, 1]
 
   ground/earth-root-tall-1:
     <<: *ground-earth-accent-root
@@ -1256,6 +1270,7 @@ items:
       - frames: ground/earth-root-tall-1
         type: modtile
     code: 536
+    tile_size: [1, 2]
 
   ground/earth-root-big-1:
     <<: *ground-earth-accent-root
@@ -1264,6 +1279,7 @@ items:
       - frames: ground/earth-root-big-1
         type: modtile
     code: 537
+    tile_size: [2, 2]
 
   ground/earth-root-huge-1:
     <<: *ground-earth-accent-root
@@ -1272,6 +1288,7 @@ items:
       - frames: ground/earth-root-huge-1
         type: modtile
     code: 538
+    tile_size: [3, 3]
 
 
   # Fossils
@@ -1382,6 +1399,7 @@ items:
       item: ground/fossil-miner-buried
       notification: Recovered fossil piece!
     gui: false
+    tile_size: [2, 2]
 
   ground/fossil-miner:
     <<: *ground-fossil-assembled
@@ -1391,6 +1409,7 @@ items:
     inventory_frame: inventory/ground/fossil-miner
     crafting skill: ['perception', 6]
     ingredients: [['ground/fossil-miner-buried', 4]]
+    size: [2, 2]
 
   ground/fossil-mammoth-buried:
     <<: *ground-earth-accent
@@ -1412,6 +1431,7 @@ items:
       item: ground/fossil-mammoth-buried
       notification: Recovered fossil piece!
     gui: false
+    tile_size: [4, 3]
 
   ground/fossil-mammoth:
     <<: *ground-fossil-assembled
@@ -1421,6 +1441,7 @@ items:
     inventory_frame: inventory/ground/fossil-mammoth
     crafting skill: ['perception', 7]
     ingredients: [['ground/fossil-mammoth-buried', 12]]
+    size: [4, 3]
 
   ground/fossil-oldone-buried:
     <<: *ground-earth-accent
@@ -1442,6 +1463,7 @@ items:
       item: ground/fossil-oldone-buried
       notification: Recovered fossil piece!
     gui: false
+    tile_size: [2, 2]
 
   ground/fossil-oldone:
     <<: *ground-fossil-assembled
@@ -1451,6 +1473,7 @@ items:
     inventory_frame: inventory/ground/fossil-oldone
     crafting skill: ['perception', 9]
     ingredients: [['ground/fossil-oldone-buried', 4]]
+    size: [2, 2]
 
   ground/fossil-pterodactyl-buried:
     <<: *ground-earth-accent
@@ -1471,6 +1494,7 @@ items:
       item: ground/fossil-pterodactyl-buried
       notification: Recovered fossil piece!
     gui: false
+    tile_size: [3, 2]
 
   ground/fossil-pterodactyl:
     <<: *ground-fossil-assembled
@@ -1480,6 +1504,7 @@ items:
     inventory_frame: inventory/ground/fossil-pterodactyl
     crafting skill: ['perception', 8]
     ingredients: [['ground/fossil-pterodactyl-buried', 6]]
+    size: [3, 2]
 
   ground/fossil-trex-buried:
     <<: *ground-earth-accent
@@ -1500,6 +1525,7 @@ items:
       item: ground/fossil-trex-buried
       notification: Recovered fossil piece!
     gui: false
+    tile_size: [5, 3]
 
   ground/fossil-trex:
     <<: *ground-fossil-assembled
@@ -1509,6 +1535,7 @@ items:
     inventory_frame: inventory/ground/fossil-trex
     crafting skill: ['perception', 10]
     ingredients: [['ground/fossil-trex-buried', 15]]
+    size: [5, 3]
 
 
 
@@ -1553,6 +1580,7 @@ items:
       - frames: ground/clay-1
         type: modtile
     code: 541
+    tile_size: [1, 1]
 
   ground/clay-2:
     <<: *ground-clay-accent
@@ -1561,6 +1589,7 @@ items:
       - frames: ground/clay-2
         type: modtile
     code: 542
+    tile_size: [1, 1]
 
   ground/clay-3:
     <<: *ground-clay-accent
@@ -1569,6 +1598,7 @@ items:
       - frames: ground/clay-3
         type: modtile
     code: 543
+    tile_size: [1, 1]
 
   ground/clay-4:
     <<: *ground-clay-accent
@@ -1577,6 +1607,7 @@ items:
       - frames: ground/clay-4
         type: modtile
     code: 544
+    tile_size: [1, 1]
 
   ground/clay-5:
     <<: *ground-clay-accent
@@ -1585,6 +1616,7 @@ items:
       - frames: ground/clay-5
         type: modtile
     code: 545
+    tile_size: [1, 1]
 
   ground/clay-6:
     <<: *ground-clay-accent
@@ -1593,6 +1625,7 @@ items:
       - frames: ground/clay-6
         type: modtile
     code: 546
+    tile_size: [1, 2]
 
   ground/clay-7:
     <<: *ground-clay-accent
@@ -1601,6 +1634,7 @@ items:
       - frames: ground/clay-7
         type: modtile
     code: 547
+    tile_size: [1, 2]
 
   ground/clay-8:
     <<: *ground-clay-accent
@@ -1609,6 +1643,7 @@ items:
       - frames: ground/clay-8
         type: modtile
     code: 548
+    tile_size: [2, 1]
 
   ground/clay-9:
     <<: *ground-clay-accent
@@ -1617,6 +1652,7 @@ items:
       - frames: ground/clay-9
         type: modtile
     code: 549
+    tile_size: [2, 1]
 
 
   # Minerals
@@ -2807,6 +2843,7 @@ items:
     ingredients: [['building/wood', 10], ['building/iron', 4]]
     crafting skill: ['building', 4]
     title: Wood Bridge
+    size: [4, 3]
     karma: -2
   building/bridge-wood-block:
     <<: *front-block
@@ -5370,6 +5407,7 @@ items:
     field: 1
     meta: local
     tradeable: false
+    size: [3, 3]
   furniture/wine-rack:
     code: 769
     material: wood
@@ -5508,6 +5546,7 @@ items:
     <<: *furniture-mounted-art
     code: 395
     title: Hunter Head
+    size: [2, 2]
   furniture/head-zebra:
     <<: *furniture-mounted-art
     code: 396
@@ -5516,7 +5555,7 @@ items:
   furniture/head-mammoth:
     <<: *furniture-mounted-art
     code: 217
-    size: [2, 2]
+    size: [3, 3]
     title: Mammoth Head
 
   furniture/pinned-bee:
@@ -5531,6 +5570,7 @@ items:
   furniture/pinned-dragonfly:
     <<: *furniture-mounted-art
     code: 387
+    size: [2, 1]
   furniture/pinned-millipede:
     <<: *furniture-mounted-art
     code: 388
@@ -5830,6 +5870,7 @@ items:
       - frames: furniture/daguerreotype-frame-large
       - frames: ['furniture/daguerreotype-image', 12]
         type: random
+    size: [2, 2]
 
   # Containers
 
@@ -6467,22 +6508,28 @@ items:
     code: 832
     ingredients: [['building/wood-decorative', 8], 'building/brass', ['building/porcelain', 3]]
     crafting skill: ['building', 7]
+    size: [3, 2]
 
   music/bass-drum:
     <<: *music
     code: 249
+    size: [2, 2]
   music/gong:
     <<: *music
     code: 250
+    size: [2, 2]
   music/harp:
     <<: *music
     code: 251
+    side: [2, 2]
   music/snare-drum:
     <<: *music
     code: 252
+    size: [2, 2]
   music/synthesizer:
     <<: *music
     code: 253
+    size: [2, 2]
 
 
 
@@ -7518,6 +7565,7 @@ items:
     karma: -7
     report: true
     rarity: 4
+    size: [2, 2]
 
   mechanical/compass-base: &compass
     rarity: 5
@@ -9771,6 +9819,7 @@ items:
     code: 967
     background: mechanical/ship-wheel-base
     sprite: mechanical/ship-wheel
+    size: [2, 2]
 
   mechanical/toolbox:
     code: 470
@@ -9949,6 +9998,7 @@ items:
     code: 464
     sprite: holiday/gift-tall-1
     title: Tall Gift Box
+    size: [1, 2]
   holiday/mistletoe:
     code: 465
   holiday/stocking:
@@ -10048,6 +10098,7 @@ items:
   holiday/gingerbread-house:
     <<: *mirrorable
     code: 222
+    size: [2, 2]
   holiday/holly-garland:
     <<: *mirrorable
     code: 151
@@ -10092,7 +10143,7 @@ items:
     group: pickaxe
     power: 1.4
     powerV3: 0.4
-    bonus: 0.25
+    tool_bonus: 0.25
     life: 20
     damage: ['piercing', 0.125]
     auto_equip: true
@@ -10106,7 +10157,7 @@ items:
     group: pickaxe
     power: 1.9
     powerV3: 0.6
-    bonus: 0.5
+    tool_bonus: 0.5
     life: 50
     title: Fine Pickaxe
     damage: ['piercing', 0.175]
@@ -10121,7 +10172,7 @@ items:
     group: pickaxe
     power: 2.35
     powerV3: 0.8
-    bonus: 0.75
+    tool_bonus: 0.75
     life: 100
     title: Diamond Pickaxe
     damage: ['piercing', 0.225]
@@ -10138,7 +10189,7 @@ items:
     group: pickaxe
     power: 2.75
     powerV3: 1.0
-    bonus: 1.0
+    tool_bonus: 1.0
     life: 200
     title: Onyx Pickaxe
     damage: ['piercing', 0.275]
@@ -10389,7 +10440,7 @@ items:
     group: spade
     power: 0.6
     powerV3: 0.2
-    bonus: 0.5
+    tool_bonus: 0.5
     damage: ['piercing', 0.075]
     ingredients: [['building/iron', 2], ['building/wood', 2]]
     crafting skill: ['building', 3]
@@ -10401,7 +10452,7 @@ items:
     group: spade
     power: 1.0
     powerV3: 0.4
-    bonus: 0.75
+    tool_bonus: 0.75
     damage: ['piercing', 0.125]
     ingredients: [['ground/diamond-ore', 3], ['building/iron', 2]]
     crafting skill: ['building', 5]
@@ -10413,7 +10464,7 @@ items:
     group: spade
     power: 1.5
     powerV3: 0.5
-    bonus: 1.0
+    tool_bonus: 1.0
     damage: ['piercing', 0.175]
     ingredients: [['ground/onyx', 2], ['building/iron', 2]]
     crafting skill: ['building', 7]
