@@ -8533,7 +8533,7 @@ items:
     code: 44
     background: mechanical/turret-base-small
     inventory sprite: turrets/frost
-    title: Gun Turret
+    title: Frost Turret
     #ingredients: ['parts/gun-barrel', ['ammo/bullets', 4], 'building/brass', 'building/iron', ['ground/crystal-blue-1', 2]]
     #crafting skill: ['automata', 3]
 
@@ -8556,7 +8556,7 @@ items:
     code: 47
     background: mechanical/turret-base-small
     inventory sprite: turrets/energy
-    title: Gun Turret
+    title: Energy Turret
     #ingredients: ['parts/gun-barrel', ['ammo/bullets', 4], 'building/brass', 'building/iron', ['ground/crystal-blue-1', 2]]
     #crafting skill: ['automata', 3]
 
