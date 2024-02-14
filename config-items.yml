@@ -4605,7 +4605,8 @@ items:
       command: true
       burst:
         effect: poison
-        damage: ['acid', 3.0]
+        damage_type: acid
+        damage: 3.0
         range: 3
         natural: true
     use_proximity: 3
@@ -4618,7 +4619,8 @@ items:
       command: true
       burst:
         effect: poison
-        damage: ['acid', 20.0]
+        damage_type: acid
+        damage: 20.0
         range: 5
         natural: true
     use_proximity: 5
@@ -4640,7 +4642,8 @@ items:
       command: true
       burst:
         effect: shadow steam large
-        damage: ['energy', 5]
+        damage_type: energy
+        damage: 5.0
         range: 5
         natural: true
     use_proximity: 2
