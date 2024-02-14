@@ -4608,6 +4608,7 @@ items:
         damage_type: acid
         damage: 3.0
         range: 3
+        dodge: true
         natural: true
     use_proximity: 3
   vegetation/mushroom-apostate-elder:
@@ -4622,6 +4623,7 @@ items:
         damage_type: acid
         damage: 20.0
         range: 5
+        dodge: true
         natural: true
     use_proximity: 5
 
@@ -4645,6 +4647,7 @@ items:
         damage_type: energy
         damage: 5.0
         range: 5
+        dodge: true
         natural: true
     use_proximity: 2
     emitter: shadow steam
@@ -8374,11 +8377,15 @@ items:
     reach: true
     meta: hidden
     use:
-      proximity:
-        distance: 3
-      timer: ['bomb-fire', 5]
-      enemy: true
-    timer_delay: 0
+      command: true
+      burst:
+        effect: bomb
+        damage_type: fire
+        damage: 5.0
+        range: 5.0
+        dodge: true
+        enemy: true
+    use_proximity: 2.5
     karma: -3
 
   mechanical/trap-mine-buried:
@@ -8395,9 +8402,15 @@ items:
     reach: true
     continuity: ground/earth
     use:
-      proximity:
-        distance: 3
-      timer: ['bomb', 8]
+      command: true
+      burst:
+        effect: bomb
+        damage_type: fire
+        damage: 8.0
+        range: 8.0
+        enemy: true
+        destructive: true
+    use_proximity: 2.5
     timer_delay: 0
 
   mechanical/stand:
