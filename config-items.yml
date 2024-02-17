@@ -8359,12 +8359,30 @@ items:
     code: 917
     title: Spawn Bomb
     timer: ['bomb-spawner', 4]
+    spawn_entity:
+      terrapus/adult: 1
+      terrapus/fire: 1
+      terrapus/frost: 1
+      terrapus/acid: 1
+      terrapus/skeleton: 1
+      automata/tiny: 1
+      automata/small: 1
+      brains/tiny-crawler: 1
+      brains/tiny-flyer: 1
 
   mechanical/bomb-spawner-large:
     <<: *bomb
     code: 918
     title: Large Spawn Bomb
-    timer: ['bomb-spawner-large', 5]
+    timer: ['bomb-spawner', 5]
+    spawn_entity:
+      brains/small: 3
+      brains/tiny-flyer: 1
+      brains/tiny-crawler: 1
+      brains/medium: 1
+      automata/small: 1
+      revenant: 1
+      dire-revenant: 1
 
   mechanical/trap-mine:
     code: 870
