@@ -3704,6 +3704,7 @@ items:
 
   signs/mechanical: &sign-large
     code: 919
+    size: [4, 3]
     meta: local
     title: Mechanical Sign
     karma: -5
