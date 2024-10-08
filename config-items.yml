@@ -2863,6 +2863,7 @@ items:
   building/bridge-stone:
     <<: *mirrorable
     code: 683
+    size: [4, 3]
     material: stone
     toughness: 5
     shape: polygonal
