@@ -9659,6 +9659,7 @@ items:
     karma: -5
     title: Target Teleporter
     hint: "Target teleporters allow teleportation to a specific location nearby. Place a beacon after placing the teleporter to identify the location. As your engineering skill increases, you can place it farther and farther away!"
+    size: [2, 1]
     change:
       - name: mechanical/teleporter-mini-active
         background: mechanical/teleporter-mini-base
@@ -9680,6 +9681,7 @@ items:
     ingredients: [['building/brass', 6], ['building/iron', 2], ['ground/quartz-ore', 8], ['ground/crystal-blue-1', 3], 'ground/diamond-ore']
     placing skill: ['engineering', 6]
     crafting skill: ['engineering', 8]
+    size: [2, 1]
     use:
       command: true
       target teleport: true
@@ -9710,6 +9712,7 @@ items:
     #ingredients: [['building/brass', 6], ['building/iron', 2], ['ground/quartz-ore', 8], ['ground/crystal-blue-1', 3], 'ground/diamond-ore']
     placing skill: ['engineering', 8]
     crafting skill: ['engineering', 10]
+    size: [2, 1]
     use:
       command: true
       target teleport: true
@@ -9738,6 +9741,7 @@ items:
     placing skill: ['engineering', 2]
     crafting skill: ['engineering', 4]
     karma: -3
+    size: [1, 2]
     use:
       transmitted: true
 
