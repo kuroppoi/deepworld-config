@@ -57,6 +57,30 @@
       Mouse Scroll Wheel: ['Scroll Up', 'Scroll Down']
 
   items:
+    mechanical/teleporter-mini:
+      change:
+        - name: mechanical/teleporter-mini-active
+          inherit: true
+          sprites:
+            - frames: mechanical/teleporter-mini-base
+            - frames: ['mechanical/teleporter-mini-motes', 3]
+              type: animated
+              color: 'c7fca8'
+
+    mechanical/teleporter-mini-diamond:
+      sprites:
+        - frames: mechanical/teleporter-mini-diamond-base
+        - frames: ['mechanical/teleporter-mini-motes', 3]
+          type: animated
+          color: '44aaff'
+          
+    mechanical/teleporter-mini-onyx:
+      sprites:
+        - frames: mechanical/teleporter-mini-onyx-base
+        - frames: ['mechanical/teleporter-mini-motes', 3]
+          type: animated
+          color: 'ee44ff'
+
     wardrobe: &wardrobe
       craftable: false
       placeable: false
