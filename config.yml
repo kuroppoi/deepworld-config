@@ -1334,6 +1334,10 @@ inventory:
       - mechanical/stand
       - chromatic/flag
       - containers/pandora-open
+      - mechanical/geck-tub
+      - mechanical/composter-chamber
+      - mechanical/recycler-chamber
+      - hell/expiator-face
 
 
 zone search v2:
