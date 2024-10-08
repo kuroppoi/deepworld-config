@@ -3581,6 +3581,7 @@ items:
       - signs/plaque-landmark
     toughness: 10
     group: plaque
+    size: [3, 2]
 
   signs/plaque-dialog: &plaque-dialog
     target: meta
