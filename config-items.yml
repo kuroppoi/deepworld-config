@@ -9699,6 +9699,12 @@ items:
             input:
               type: text
               key: py
+          - title: Protected area entry
+            text: (You must be the owner or a member of the protected area for this setting to work)
+            input:
+              type: text index
+              options: ['Only me', 'People I follow', 'Everyone']
+              key: pt
 
   mechanical/teleporter-mini-onyx:
     <<: *mechanical
@@ -9734,6 +9740,12 @@ items:
             input:
               type: text
               key: py
+          - title: Protected area entry
+            text: (You must be the owner or a member of the protected area for this setting to work)
+            input:
+              type: text index
+              options: ['Only me', 'People I follow', 'Everyone']
+              key: pt
 
   mechanical/beacon:
     <<: *mechanical
