@@ -219,6 +219,7 @@ inventory:
       - ground/limestone
       - ground/sand
       - ground/blackrock
+      - ground/bedrock
       - rubble/wood-1
       - rubble/stone-pile-1
       - ground/flax
@@ -263,6 +264,18 @@ inventory:
       - desert/rock-tall
       - desert/rock-wide
       - desert/rock-large
+
+      - ground/iron
+      - ground/copper
+      - ground/zinc
+      - ground/lead
+      - ground/quartz
+      - ground/sulfur
+      - ground/marble
+      - ground/bloodstone
+      - ground/beryllium
+      - ground/diamond
+      - ground/platinum
 
   - name: construction
     icon: inventory/back/glass
@@ -1268,7 +1281,6 @@ inventory:
     icon: inventory/signs/guild
     items:
       - air
-      - ground/bedrock
       - base/empty
       - base/earth
       - base/earth-accent
@@ -1334,10 +1346,6 @@ inventory:
       - mechanical/stand
       - chromatic/flag
       - containers/pandora-open
-      - mechanical/geck-tub
-      - mechanical/composter-chamber
-      - mechanical/recycler-chamber
-      - hell/expiator-face
 
 
 zone search v2:

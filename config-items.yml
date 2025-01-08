@@ -87,6 +87,7 @@ items:
     code: 1
     visible: false
     excavatable: false
+    inventory_frame: inventory/none
 
   base/earth:
     <<: *base
@@ -98,6 +99,7 @@ items:
     border_continuity_color: '1a0e00'
     title: Earth Backdrop
     hintt: 'A rare handheld chunk of earth backdrop, sometimes referred to as "Bruce".'
+    inventory_frame: inventory/unknown
 
   base/sandstone:
     <<: *base
@@ -109,6 +111,7 @@ items:
     sprite_z: 3
     color: cfad70
     title: Sandstone Backdrop
+    inventory_frame: inventory/unknown
 
   base/limestone:
     <<: *base
@@ -120,6 +123,7 @@ items:
     sprite_z: 2
     color: bbbeb5
     title: Limestone Backdrop
+    inventory_frame: inventory/unknown
 
   base/maw:
     code: 5
@@ -133,6 +137,7 @@ items:
     sprite_align: center
     hintt: "A crevice in the earth that spews terrapi and other small mobs. Maws can be temporarily blocked by solid blocks, whereas a @plug will permanently close them and advance the player's Pest Control achievements."
     excavatable: false
+    inventory_frame: inventory/unknown
 
   base/maw-plugged:
     code: 7
@@ -145,6 +150,7 @@ items:
     title: Plugged Maw
     hintt: "A plugged maw, no longer capable of spewing mobs."
     excavatable: true
+    inventory_frame: inventory/unknown
 
   base/pipe:
     code: 6
@@ -156,6 +162,7 @@ items:
     hintt: "An old pipeline that spews automata and other, more dangerous mobs. Much like maws, culverts can be plugged permanently with a @plug or covered temporarily with a solid block."
     excavatable: false
     title: Culvert
+    inventory_frame: inventory/unknown
 
   base/pipe-plugged:
     code: 8
@@ -167,6 +174,7 @@ items:
     title: Plugged Culvert
     hintt: "A plugged culvert, no longer capable of spewing mobs."
     excavatable: true
+    inventory_frame: inventory/unknown
 
   base/water:
     <<: *base
@@ -174,6 +182,7 @@ items:
     title: Ocean
     hintt: "The endless blue sea, offering solace, tranquility, and that crushing feeling of millions of tons of water pushing you into the depths."
     excavatable: false
+    inventory_frame: inventory/liquid/water
 
   base/vent:
     <<: *base
@@ -192,6 +201,7 @@ items:
     sprites:
       - frames: base/steam-vent
         type: continuity
+    inventory_frame: inventory/unknown
 
   base/vent-cap:
     <<: *base
@@ -209,6 +219,7 @@ items:
     sprites:
       - frames: base/steam-vent-cap
         type: continuity
+    inventory_frame: inventory/unknown
 
   base/drawing: &base-drawing
     <<: *base
@@ -217,6 +228,7 @@ items:
     border-wholeness: earth
     border-continuity-external: ['masks/border-external', 12]
     sprite_z: 7
+    inventory_frame: inventory/unknown
 
   base/drawing-modern:
     <<: *base-drawing
@@ -224,6 +236,7 @@ items:
     sprite: ['caves/drawing-modern', 9]
     title: Modern Graffiti
     hintt: "Modern graffiti, drawn by survivors of the apocalypse or the recently deceased."
+    inventory_frame: inventory/unknown
 
   base/drawing-historical:
     <<: *base-drawing
@@ -231,6 +244,7 @@ items:
     sprite: ['caves/drawing-historical', 13]
     title: Historical Graffiti
     hintt: "Ancient graffiti, artistic representations of a bygone era or some other unknown origin."
+    inventory_frame: inventory/unknown
 
   base/drawing-danger:
     <<: *base-drawing
@@ -238,6 +252,7 @@ items:
     sprite: ['caves/drawing-danger', 8]
     title: Warning Graffiti
     hintt: "Warnings drawn by the survivors of the apocalpyse. Generally, the artist is no longer surviving."
+    inventory_frame: inventory/unknown
 
   base/earth-accent:
     code: 15
@@ -257,6 +272,7 @@ items:
     - frames: ['base/earth-accent', 14]
       type: random
       align: center
+    inventory_frame: inventory/unknown
 
 
 
@@ -777,7 +793,7 @@ items:
     craftable: false
     inventory: rubble/iron
     toughness: 1
-    hintt: '@scaffold'
+    hintt: 'Decayed Scaffolding - Unobtainable Item'
   back/scaffold-wood:
     code: 32
     level: 3
@@ -842,6 +858,7 @@ items:
 
   ground/earth-dug:
     <<: *earth-dug
+    inventory_frame: inventory/ground/earth
     code: 519
 
   ground/earth-disintegrating:
@@ -849,6 +866,7 @@ items:
     gui: false
     code: 509
     title: Disintegrating Earth
+    inventory_frame: inventory/ground/earth
 
   ground/earth-mid:
     <<: *ground-earthy
@@ -858,6 +876,7 @@ items:
     sprites:
       - frames: ground/earth-deep
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 1400
@@ -872,6 +891,7 @@ items:
     sprites:
       - frames: ground/earth-deeper
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 1300
@@ -886,6 +906,7 @@ items:
     sprites:
       - frames: ground/earth-deepest
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 1200
@@ -900,6 +921,7 @@ items:
       - frames: ground/earth
     mining skill: ['mining', 5]
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 1100
@@ -915,6 +937,7 @@ items:
     sprites:
       - frames: ground/earth-deep
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 1000
@@ -930,6 +953,7 @@ items:
     sprites:
       - frames: ground/earth-deeper
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 900
@@ -945,6 +969,7 @@ items:
     sprites:
       - frames: ground/earth-deepest
     inventory: ground/earth
+    inventory_frame: inventory/ground/earth
     gui: false
     spawn_entity:
       none: 800
@@ -1681,6 +1706,7 @@ items:
       accessory: dowsing
       double: true
       notification: Rich vein!
+    hintt: 'Ore Block - Unobtainable Item'
 
   ground/copper:
     <<: *ground-mineral
@@ -1689,6 +1715,7 @@ items:
       - frames: ground/earth
       - frames: ground/copper
     inventory: ground/copper-ore
+    inventory_frame: inventory/ground/copper-ore
   ground/zinc:
     <<: *ground-mineral
     code: 551
@@ -1696,6 +1723,7 @@ items:
       - frames: ground/earth
       - frames: ground/zinc
     inventory: ground/zinc-ore
+    inventory_frame: inventory/ground/zinc-ore
   ground/iron:
     <<: *ground-mineral
     code: 552
@@ -1703,6 +1731,7 @@ items:
       - frames: ground/earth
       - frames: ground/iron
     inventory: ground/iron-ore
+    inventory_frame: inventory/ground/iron-ore
   ground/quartz:
     <<: *ground-mineral
     code: 553
@@ -1710,6 +1739,7 @@ items:
       - frames: ground/earth
       - frames: ground/quartz
     inventory: ground/quartz-ore
+    inventory_frame: inventory/ground/quartz-ore
   ground/sulfur:
     <<: *ground-mineral
     code: 554
@@ -1717,6 +1747,7 @@ items:
       - frames: ground/earth
       - frames: ground/sulfur
     inventory: ground/sulfur-ore
+    inventory_frame: inventory/ground/sulfur-ore
   ground/lead:
     <<: *ground-mineral
     code: 555
@@ -1724,6 +1755,7 @@ items:
       - frames: ground/earth
       - frames: ground/lead
     inventory: ground/lead-ore
+    inventory_frame: inventory/ground/lead-ore
   ground/bloodstone:
     <<: *ground-mineral
     code: 556
@@ -1731,6 +1763,7 @@ items:
       - frames: ground/earth
       - frames: ground/bloodstone
     inventory: ground/bloodstone-ore
+    inventory_frame: inventory/ground/bloodstone-ore
     mining_bonus:
       chance: 0.15
       skill: mining
@@ -1745,6 +1778,7 @@ items:
       - frames: ground/earth
       - frames: ground/marble
     inventory: ground/marble-ore
+    inventory_frame: inventory/ground/marble-ore
     mining_bonus:
       chance: 0.15
       skill: mining
@@ -1759,14 +1793,15 @@ items:
       - frames: ground/earth
       - frames: ground/diamond
     inventory: ground/diamond-ore
+    inventory_frame: inventory/ground/diamond-ore
     mining_bonus:
       chance: 0.1
       skill: mining
       tool: pickaxe
       accessory: dowsing
       notification: Rich vein!
-    light: 0.15
-    light_color: f2f2ff
+    light: 1
+    light_color: '919191'
     rarity: 4
   ground/platinum:
     <<: *ground-mineral
@@ -1775,14 +1810,15 @@ items:
       - frames: ground/earth
       - frames: ground/platinum
     inventory: ground/platinum-ore
+    inventory_frame: inventory/ground/platinum-ore
     mining_bonus:
       chance: 0.11
       skill: mining
       tool: pickaxe
       accessory: dowsing
       notification: Rich vein!
-    light: 0.15
-    light_color: f2f2ff
+    light: 1
+    light_color: '919191'
     rarity: 4
   ground/beryllium:
     <<: *ground-mineral
@@ -1791,6 +1827,7 @@ items:
       - frames: ground/earth
       - frames: ground/beryllium
     inventory: ground/beryllium-ore
+    inventory_frame: inventory/ground/beryllium-ore
     mining_bonus:
       chance: 0.125
       skill: mining
@@ -1851,8 +1888,8 @@ items:
     code: 568
     sprite: ['ground/diamond-ore', 3]
     stealable: false
-    light: 0.15
-    light_color: f2f2ff
+    light: 1
+    light_color: '919191'
     rarity: 4
     karma: -10
   ground/beryllium-ore:
@@ -1865,8 +1902,8 @@ items:
     code: 59
     sprite: ['ground/platinum-ore', 3]
     stealable: false
-    light: 0.15
-    light_color: f2f2ff
+    light: 1
+    light_color: '919191'
     rarity: 4
     karma: -10
 
@@ -1931,7 +1968,7 @@ items:
     material: glass
     damage: ['piercing', 0.3]
     damage_min_velocity: 5
-    light: 2
+    light: 1
     shape: polygonal
     title: Crystal
     craftable: false
@@ -1955,6 +1992,7 @@ items:
     <<: *ground-crystal-blue
     code: 581
     title: Medium Blue Crystal
+    block_size: [1, 2]
     inventory: ground/crystal-blue-2
 
   ground/crystal-blue-3:
@@ -1965,6 +2003,7 @@ items:
     <<: *ground-crystal-blue
     code: 583
     title: Large Blue Crystal
+    block_size: [1, 3]
     inventory: ground/crystal-blue-4
 
   ground/crystal-purple-1:
@@ -1978,6 +2017,8 @@ items:
   ground/crystal-purple-large:
     <<: *ground-crystal
     title: Large Purple Crystal
+    block_size: [1, 2]
+    light_color: '5e2388'
     code: 593
     rarity: 4
 
@@ -1991,7 +2032,9 @@ items:
 
   ground/crystal-red-large:
     <<: *ground-crystal
+    light_color: b72f30
     title: Large Red Crystal
+    block_size: [1, 2]
     code: 592
     rarity: 4
 
@@ -2000,6 +2043,7 @@ items:
     light_color: b72f30
     code: 594
     title: Orange Crystal
+    block_size: [2, 2]
     rarity: 4
     karma: -15
 
@@ -2014,6 +2058,7 @@ items:
     <<: *ground-crystal
     code: 54
     title: Large Green Crystal
+    block_size: [1, 2]
     light_color: '03ff58'
     karma: -15
 
@@ -2021,19 +2066,21 @@ items:
     <<: *ground-crystal
     code: 55
     title: White Crystal
-    light_color: ffffff
+    light_color: '919191'
 
   ground/crystal-white-large:
     <<: *ground-crystal
     code: 56
     title: Large White Crystal
-    light_color: ffffff
+    block_size: [1, 2]
+    light_color: '919191'
     karma: -15
 
   ground/crystal-yellow:
     <<: *ground-crystal
     code: 57
     title: Yellow Crystal
+    block_size: [1, 2]
     light_color: eecc00
     karma: -15
 
@@ -2042,7 +2089,7 @@ items:
     code: 58
     title: Rainbow Crystal
     block_size: [2, 3]
-    light_color: ff76f4
+    light_color: a3839d
     karma: -25
 
   ground/salt-crystal:
@@ -2563,7 +2610,7 @@ items:
 
   building/crystal: &building-crystal
     sprite: building/crystal-whole
-    light: 2
+    light: 1
     shape: box
     shelter: true
     tileable: true
@@ -2863,7 +2910,6 @@ items:
   building/bridge-stone:
     <<: *mirrorable
     code: 683
-    size: [4, 3]
     material: stone
     toughness: 5
     shape: polygonal
@@ -3582,7 +3628,6 @@ items:
       - signs/plaque-landmark
     toughness: 10
     group: plaque
-    size: [3, 2]
 
   signs/plaque-dialog: &plaque-dialog
     target: meta
@@ -3706,7 +3751,6 @@ items:
 
   signs/mechanical: &sign-large
     code: 919
-    size: [4, 3]
     meta: local
     title: Mechanical Sign
     karma: -5
@@ -3897,6 +3941,7 @@ items:
     sprite: signs/obelisk
     gui: false
     title: Spawn Obelisk
+    inventory_frame: inventory/unknown
 
   signs/obelisk-checkpoint:
     code: 935
@@ -4264,6 +4309,7 @@ items:
     tileable: true
     placeover: true
     gui: false
+    inventory_frame: inventory/unknown
 
   vegetation/shrub: &vegetation-shrub
     <<: *vegetation
@@ -4497,13 +4543,13 @@ items:
     code: 741
     sprite: ['vegetation/mushroom-acid', 2]
     title: Acid Mushroom
-    light: 2
+    light: 1
     light_color: '86df46'
   vegetation/mushroom-acid-tall:
     <<: *vegetation-mushrooms
     code: 742
     title: Elder Acid Mushroom
-    light: 3
+    light: 1
     light_color: '86df46'
     karma: -3
 
@@ -4512,14 +4558,14 @@ items:
     code: 743
     sprite: ['vegetation/mushroom-anbaric', 4]
     title: Anbaric Mushroom
-    light: 2
+    light: 1
     light_color: f1f181
     karma: -3
   vegetation/mushroom-anbaric-elder:
     <<: *vegetation-mushrooms
     code: 487
     title: Elder Anbaric Mushroom
-    light: 2
+    light: 1
     light_color: f1f181
     karma: -10
 
@@ -4563,11 +4609,15 @@ items:
     code: 749
     sprite: ['vegetation/mushroom-hell', 3]
     title: Infernal Mushroom
+    light: 1
+    light_color: a82818
     karma: -3
   vegetation/mushroom-hell-elder:
     <<: *vegetation-mushrooms
     code: 448
     title: Elder Infernal Mushroom
+    light: 1
+    light_color: a82818
     karma: -10
 
   vegetation/mushroom-lava:
@@ -4575,14 +4625,14 @@ items:
     code: 750
     sprite: ['vegetation/mushroom-lava', 3]
     title: Lava Mushroom
-    light: 2
+    light: 1
     light_color: f14121
     karma: -3
   vegetation/mushroom-lava-elder:
     <<: *vegetation-mushrooms
     code: 447
     title: Elder Lava Mushroom
-    light: 2
+    light: 1
     light_color: f14121
     karma: -10
 
@@ -4608,10 +4658,8 @@ items:
       command: true
       burst:
         effect: poison
-        damage_type: acid
-        damage: 3.0
+        damage: ['acid', 3.0]
         range: 3
-        dodge: true
         natural: true
     use_proximity: 3
   vegetation/mushroom-apostate-elder:
@@ -4623,10 +4671,8 @@ items:
       command: true
       burst:
         effect: poison
-        damage_type: acid
-        damage: 20.0
+        damage: ['acid', 20.0]
         range: 5
-        dodge: true
         natural: true
     use_proximity: 5
 
@@ -4647,10 +4693,8 @@ items:
       command: true
       burst:
         effect: shadow steam large
-        damage_type: energy
-        damage: 5.0
+        damage: ['energy', 5]
         range: 5
-        dodge: true
         natural: true
     use_proximity: 2
     emitter: shadow steam
@@ -5030,7 +5074,6 @@ items:
     background: lighting/grow-lamp
     sprite animation: ['lighting/grow-lamp-glow', 2]
     light: 6
-    light_color: ffaaff
     title: Grow Lamp
     mounted: true
     #ingredients: [['building/brass', 2], ['building/iron', 2], ['back/glass', 2], 'ground/crystal-purple-1']
@@ -6066,6 +6109,7 @@ items:
     loot_graphic: loot_red
     sprite: containers/chest-large
     group: chest
+    inventory_frame: inventory/containers/chest-large
 
   containers/sack-plenty:
     <<: *containers-plenty
@@ -6074,6 +6118,7 @@ items:
     title: Sack of Plenty
     sprite: containers/sack-large-1
     group: sack
+    inventory_frame: inventory/containers/sack-large
 
   containers/chest-industrial:
     <<: *containers-full-mod
@@ -6401,6 +6446,7 @@ items:
     mod: change
     material: metal
     sprite: containers/pandora-box-closed
+    inventory_frame: inventory/containers/pandora
     gui: false
     emitter: pandora spread
     wiki: false
@@ -7568,6 +7614,7 @@ items:
     invulnerable: true
     gui: false
     title: Programmer
+    inventory_frame: inventory/unknown
 
   mechanical/telescope:
     code: 103
@@ -7713,8 +7760,8 @@ items:
     craftable: false
     mod: field
     meta: global
-    title: Competition Protector
     background: mechanical/dish
+    inventory_frame: inventory/mechanical/dish
     sprite: mechanical/switch-color-green
     invulnerable: true
     hint: '@dish'
@@ -7737,16 +7784,19 @@ items:
 
   mechanical/dish-competition-20:
     <<: *dish-competition
+    title: Competition Protector 20
     code: 866
     field: 20
 
   mechanical/dish-competition-25:
     <<: *dish-competition
+    title: Competition Protector 25
     code: 869
     field: 25
 
   mechanical/dish-competition-5:
     <<: *dish-competition
+    title: Competition Protector 5
     code: 1194
     field: 5
 
@@ -8233,6 +8283,7 @@ items:
     inventory: rubble/iron
     shelter: true
     sprite: mechanical/spikes
+    inventory_frame: inventory/mechanical/spikes
     gui: false
     shape_definition: mechanical/spikes
     fieldable: false
@@ -8361,30 +8412,12 @@ items:
     code: 917
     title: Spawn Bomb
     timer: ['bomb-spawner', 4]
-    spawn_entity:
-      terrapus/adult: 1
-      terrapus/fire: 1
-      terrapus/frost: 1
-      terrapus/acid: 1
-      terrapus/skeleton: 1
-      automata/tiny: 1
-      automata/small: 1
-      brains/tiny-crawler: 1
-      brains/tiny-flyer: 1
 
   mechanical/bomb-spawner-large:
     <<: *bomb
     code: 918
     title: Large Spawn Bomb
-    timer: ['bomb-spawner', 5]
-    spawn_entity:
-      brains/small: 3
-      brains/tiny-flyer: 1
-      brains/tiny-crawler: 1
-      brains/medium: 1
-      automata/small: 1
-      revenant: 1
-      dire-revenant: 1
+    timer: ['bomb-spawner-large', 5]
 
   mechanical/trap-mine:
     code: 870
@@ -8398,15 +8431,11 @@ items:
     reach: true
     meta: hidden
     use:
-      command: true
-      burst:
-        effect: bomb
-        damage_type: fire
-        damage: 5.0
-        range: 5.0
-        dodge: true
-        enemy: true
-    use_proximity: 2.5
+      proximity:
+        distance: 3
+      timer: ['bomb-fire', 5]
+      enemy: true
+    timer_delay: 0
     karma: -3
 
   mechanical/trap-mine-buried:
@@ -8423,15 +8452,9 @@ items:
     reach: true
     continuity: ground/earth
     use:
-      command: true
-      burst:
-        effect: bomb
-        damage_type: fire
-        damage: 8.0
-        range: 8.0
-        enemy: true
-        destructive: true
-    use_proximity: 2.5
+      proximity:
+        distance: 3
+      timer: ['bomb', 8]
     timer_delay: 0
 
   mechanical/stand:
@@ -8570,7 +8593,7 @@ items:
     code: 44
     background: mechanical/turret-base-small
     inventory sprite: turrets/frost
-    title: Frost Turret
+    title: Gun Turret
     #ingredients: ['parts/gun-barrel', ['ammo/bullets', 4], 'building/brass', 'building/iron', ['ground/crystal-blue-1', 2]]
     #crafting skill: ['automata', 3]
 
@@ -8593,7 +8616,7 @@ items:
     code: 47
     background: mechanical/turret-base-small
     inventory sprite: turrets/energy
-    title: Energy Turret
+    title: Gun Turret
     #ingredients: ['parts/gun-barrel', ['ammo/bullets', 4], 'building/brass', 'building/iron', ['ground/crystal-blue-1', 2]]
     #crafting skill: ['automata', 3]
 
@@ -9579,6 +9602,7 @@ items:
   desert/cactus: &desert-cactus
     gui: false
     inventory: vegetation/cactus-small
+    inventory-frame: inventory/vegetation/cactus-small
 
   desert/cactus-base:
     <<: *desert-cactus
@@ -9660,7 +9684,6 @@ items:
     karma: -5
     title: Target Teleporter
     hint: "Target teleporters allow teleportation to a specific location nearby. Place a beacon after placing the teleporter to identify the location. As your engineering skill increases, you can place it farther and farther away!"
-    size: [2, 1]
     change:
       - name: mechanical/teleporter-mini-active
         background: mechanical/teleporter-mini-base
@@ -9682,7 +9705,6 @@ items:
     ingredients: [['building/brass', 6], ['building/iron', 2], ['ground/quartz-ore', 8], ['ground/crystal-blue-1', 3], 'ground/diamond-ore']
     placing skill: ['engineering', 6]
     crafting skill: ['engineering', 8]
-    size: [2, 1]
     use:
       command: true
       target teleport: true
@@ -9719,7 +9741,6 @@ items:
     #ingredients: [['building/brass', 6], ['building/iron', 2], ['ground/quartz-ore', 8], ['ground/crystal-blue-1', 3], 'ground/diamond-ore']
     placing skill: ['engineering', 8]
     crafting skill: ['engineering', 10]
-    size: [2, 1]
     use:
       command: true
       target teleport: true
@@ -9754,7 +9775,6 @@ items:
     placing skill: ['engineering', 2]
     crafting skill: ['engineering', 4]
     karma: -3
-    size: [1, 2]
     use:
       transmitted: true
 
@@ -9779,6 +9799,7 @@ items:
       event: showZoneSearch
       field_display: true
     title: Spawn Teleporter
+    inventory_frame: inventory/mechanical/zone-teleporter
     custom_mine: true
     sprites:
       - frames: mechanical/zone-teleporter
@@ -9797,6 +9818,7 @@ items:
     sprite animation: ['mechanical/teleporter-glow', 2]
     sprite animation color: '111111'
     title: One-Way Teleporter
+    inventory_frame: inventory/mechanical/teleporter
     karma: -10
     #sound loop: wobble_02
     use:
@@ -9821,6 +9843,7 @@ items:
     sprite animation: ['mechanical/zone-teleporter-glow', 2]
     sprite animation color: '111111'
     title: One-Way World Teleporter
+    inventory_frame: inventory/mechanical/zone-teleporter
     karma: -20
     #sound loop: wobble_02
     use:
@@ -10079,11 +10102,12 @@ items:
   holiday/christmas-lights-colored:
     code: 477
     tileable: true
-    sprite-continuity: holiday/christmas-lights-colored
+    sprite-continuity: holiday/christmas-lights-white
+    inventory-frame: inventory/holiday/christmas-lights-white
     title: Colored Festive Lights
     size: [1, 1]
     sprites:
-      - frames: holiday/christmas-lights-colored
+      - frames: holiday/christmas-lights-white
         type: continuity
     wiki: false
     gui: false
@@ -11867,7 +11891,6 @@ items:
     karma: -2
 
   consumables/book-skill:
-    <<: *consumable
     code: 1133
     action: skill
     action_track: skills_bumped
@@ -11938,7 +11961,6 @@ items:
     power: 1.0
 
   consumables/weapon-upgrade-diamond:
-    <<: *consumable
     code: 1143
     title: Diamond Weapon Kit
     action: convert
@@ -11960,7 +11982,6 @@ items:
       tools/gun-energy-pistol: tools/gun-energy-pistol-mk2
 
   consumables/weapon-upgrade-onyx:
-    <<: *consumable
     code: 1144
     title: Onyx Weapon Kit
     action: convert
@@ -11994,7 +12015,6 @@ items:
       tools/gun-energy-pistol-mk2: tools/gun-energy-pistol-mk3
 
   consumables/turret-upgrade-diamond:
-    <<: *consumable
     code: 154
     title: Diamond Turret Kit
     action: convert
@@ -12012,7 +12032,6 @@ items:
       mechanical/turret-energy: mechanical/turret-energy-mk2
 
   consumables/turret-upgrade-onyx:
-    <<: *consumable
     code: 155
     title: Onyx Turret Kit
     action: convert
