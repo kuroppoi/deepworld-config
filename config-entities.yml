@@ -297,7 +297,7 @@ entities:
       - type: randomly_target
         range: 20
         blockable: false
-        animation: extend-arms
+        animation: extend-arms-idle # TODO:　Why does extend-arms not work?
       - type: follow
       - type: spawn_attack
         entity: bullets/shadow
