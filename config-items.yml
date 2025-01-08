@@ -9861,11 +9861,13 @@ items:
     code: 904
     title: Steam Jet
     mod: rotation
+    size: [2, 2]
 
   mechanical/steam-jet-large:
     code: 905
     title: Large Steam Jet
     mod: rotation
+    size: [3, 3]
 
   mechanical/ship-wheel:
     <<: *furniture-art
