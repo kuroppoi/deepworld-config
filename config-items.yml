@@ -6375,8 +6375,9 @@ items:
   containers/pandora:
     code: 808
     material: metal
-    meta: hidden
+    meta: local # originally hidden but v3 NEEDS to know who owns it otherwise it can't interact with it!
     sprite: containers/pandora-box-closed
+    size: [2, 2]
     karma: -10
     field: 1
     spawn_spacing: 25
@@ -6394,6 +6395,8 @@ items:
           actions: yesno
           sections:
             - title: Open Pandora's Box?
+            - text: Fortune and glory await those who can overcome the challenge...
+            - text: Invite friends for more chaos and earn better rewards!
 
   containers/pandora-open:
     code: 829
@@ -6401,6 +6404,7 @@ items:
     mod: change
     material: metal
     sprite: containers/pandora-box-closed
+    size: [2, 2]
     gui: false
     emitter: pandora spread
     wiki: false

@@ -57,6 +57,11 @@
       Mouse Scroll Wheel: ['Scroll Up', 'Scroll Down']
 
   items:
+    containers/pandora-open:
+      use: # Stupid v3 hack
+        protected: true
+        public: minigame
+  
     mechanical/geck-tub:
       sprites:
         - frames: mechanical/geck-tub
