@@ -2293,6 +2293,19 @@ entities:
         quantity: 2
         frequency: 1
     spine_skin: dire
+    spine_offset: [0, -0.2]
+    flips: false
+    breakdown:
+      - health: 10
+        effects:
+          brain-medium-jet: ['bomb', 2]
+        hide:
+          - brain-medium-jet
+      - health: 5
+        effects:
+          brain-medium-jet-copy: ['bomb', 2]
+        hide:
+          - brain-medium-jet-copy
     behavior:
       - type: shielder
         defenses: all
