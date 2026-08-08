@@ -2853,6 +2853,7 @@ items:
     ingredients: ['building/wood', 'building/iron']
     crafting skill: ['building', 4]
     title: Wood Bridge Block
+    opaque: false
   building/bridge-wood-railing:
     code: 682
     toughness: 2
@@ -5152,8 +5153,7 @@ items:
     size: [2, 4]
     material: wood
     title: Bookshelf
-    background: furniture/bookshelf-tall
-    sprite: ['furniture/bookshelf-books', 2]
+    sprite: furniture/bookshelf-tall
     ingredients: [['building/wood-board', 5]]
   furniture/bookshelf-tall-full:
     code: 771
@@ -5161,8 +5161,7 @@ items:
     material: wood
     craftable: false
     title: Bookshelf
-    background: furniture/bookshelf-tall
-    sprite: ['furniture/bookshelf-books', 2]
+    sprite: furniture/bookshelf-tall
 
   furniture/chair-plush:
     code: 772
